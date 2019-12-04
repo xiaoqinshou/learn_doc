@@ -255,6 +255,7 @@ npm i react react-dom @types/react @types/react-dom
 ### 7.1 安装 DevServer：
 ```powershell
 npm i -D webpack-dev-server
+npm i -D webpack-cli
 ```
 
 安装成功后执行 webpack-dev-server 命令， DevServer 就启动了，这时你会看到控制台有一串日志输出：
@@ -278,3 +279,31 @@ webpack output is served from /
 
 ### 7.4 支持 Source Map
 在启动时带上 --devtool source-map 参数。
+
+## 8. 配置HtmlWebpackPlugin
+> 就算做完以上配置，然后运行命令，也只能打包，无法做到实时热部署开发的模式，需要配置HtmlWebpackPlugin,才能让该脚手架实时热部署编译，并且在浏览器端实时渲染。
+
+### 8.1 安装HtmlWebpackPlugin
+运行以下命令下载最新版HtmlWebpackPlugin
+```powershell
+$ npm i -D html-webpack-plugin
+```
+
+### 8.2 配置Webpack
+&emsp;在webpack.config.js中添加以下配置
+```javascript
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        inline: true
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'index.html'),
+            hash: true,
+        })
+    ],
+};
+```
+&emsp;表示监听开发服务，配置内容库路径。并添加HtmlWebpackPlugin插件，使其实时编译引入Html页面中。
