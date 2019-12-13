@@ -69,6 +69,48 @@ $ npm install antd babel-plugin-import --save
     "tslint-react": "^3.6.0"
   }
 ```
+### 将原有的JS文件 改为TypeScript 文件
+在随意一个文件夹下添加一个页面：
+```typescript
+import * as React from 'react';
+
+export interface IAppProps {
+  name?: string;
+};
+
+const Home: React.SFC<IAppProps> = (props: IAppProps): JSX.Element => {
+  return (
+    <div>
+      <h1>
+        Hello {props.name ? props.name : "123"}
+      </h1>
+    </div>
+  );
+};
+
+export default Home;
+```
+src根目录下，分别添加 `router.tsx` 路由注册文件，以及 `index.tsx` 项目入口文件
+```typescript
+export default function RouterConfig({history}: RouterProps) {
+  return (
+    <Router history={history}>
+      <Switch>
+        <Route path="/" exact component={Home}/>
+      </Switch>
+    </Router>
+  );
+}
+```
+```typescript
+const app = dva({
+  history: createhistory(),
+});
+app.model(require('./models/modelname').default);
+app.router( require('./router').default );
+
+app.start('#root');
+```
 
 ### 配置非相对路径
 在根目录下新建 `webpack.config.js` 文件，加入地址映射：
