@@ -102,7 +102,7 @@ children 的值也是一个函数，函数返回要渲染的 React 元素。 与
     <Foo {...props} data={extraProps} />
   </div>
 }}>
-</Route>    
+</Route>
 ```
 如果 Route 匹配当前 URL，待渲染元素的根节点 div 的 class 将设置成 active.
 
@@ -117,7 +117,7 @@ children 的值也是一个函数，函数返回要渲染的 React 元素。 与
   </Switch>
 </Router>
 ```
-如果不使用 Switch,当 URL 的 pathname 为 "/posts" 时，<Route path='/posts' /> 和 <Route path=':user' /> 都会被匹配，但显然我们并不希望 <Route path=':user' /> 被匹配，实际上也没有用户名为 posts 的用户。如果不使用 exact， "/" "/posts" "/user1"等几乎所有 URL 都会匹配第一个 Route,又因为Switch 的存在，后面的两个 Route永远不会被匹配。使用 exact,保证 只有当 URL 的 pathname 为 '/'时，第一个Route才会匹配。
+如果不使用 Switch,当 URL 的 pathname 为 "/posts" 时，`<Route path='/posts' />` 和 `<Route path=':user' />` 都会被匹配，但显然我们并不希望 `<Route path=':user' />` 被匹配，实际上也没有用户名为 posts 的用户。如果不使用 exact， "/" "/posts" "/user1"等几乎所有 URL 都会匹配第一个 Route,又因为Switch 的存在，后面的两个 Route永远不会被匹配。使用 exact,保证 只有当 URL 的 pathname 为 '/'时，第一个Route才会匹配。
 
 5. 嵌套路由
 嵌套路由是指在Route 渲染的组件内部定义新的 Route。例如，在上一个例子中，在 Posts 组件内再定义两个 Route:
@@ -145,8 +145,8 @@ const Navigation = () => {
       </ul>
     </nav>
   </header>
-}    
-```  
+}
+```
 Link 使用 to 属性声明要导航到的URL地址。to 可以是 string 或 object 类型，当 to 为 object 类型时，可以包含 pathname、search、hash、state 四个属性，例如:
 ```ts
 <Link to={{
@@ -157,7 +157,7 @@ Link 使用 to 属性声明要导航到的URL地址。to 可以是 string 或 ob
 }}>
 </Link>
 ```
-除了使用Link外，我们还可以使用 history 对象手动实现导航。history 中最常用的两个方法是 push(path,[state]) 和 replace(path,[state]),push会向浏览器记录中新增一条记录，replace 会用新记录替换记录。例如：
+除了使用`Link`外，我们还可以使用 `history` 对象手动实现导航。`history` 中最常用的两个方法是 `push(path,[state])` 和 `replace(path,[state])`,`push`会向浏览器记录中新增一条记录，`replace` 会用新记录替换记录。例如：
 ```ts
 history.push('/posts');
 history.replace('/posts');
@@ -284,7 +284,7 @@ export default function asyncComponent(importComponent) {
 
   return AsyncComponent;
 }
-``` 
+```
 asyncComponent接收一个函数参数 importComponent, importComponent 内通过import()语法动态导入模块。在AsyncComponent被挂载后，importComponent就会阴调用，进而触发动态导入模块的动作。
 下面利用 asyncComponent 对上面的例子进行改造，代码如下:
 ```ts

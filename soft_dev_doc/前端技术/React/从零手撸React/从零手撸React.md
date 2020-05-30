@@ -4,7 +4,7 @@
 &emsp;&emsp;快速搭建 React 的脚手架有 FaceBook 提供的 [create-react-app](https://github.com/facebook/create-react-app) 和阿里的 [Ant Design of React](https://ant.design/docs/react/introduce-cn)，但是这两个都是现成已经搭好的脚手架，将webpack的相关配置直接封装好了，所以自定制化程度不高。对于小项目脚手架有些偏重。
 
 ## 1. 安装 Node.Js
-1. 下载对应你系统的 [Node.js版本](https://nodejs.org/en/download/) 
+1. 下载对应你系统的 [Node.js版本](https://nodejs.org/en/download/)
 2. 默认安装就行，并且配置 [Node.js环境变量](https://baike.baidu.com/item/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/1730949?fr=aladdin)
 3. 基本能在操作系统下的dos命令行敲出以下测试命令
 ```
@@ -14,7 +14,7 @@ $ npm -help
 [Node.js](https://baike.baidu.com/item/node.js) 基本安装成功.
 
 ----------
-## 2. 初始化一个空项目 
+## 2. 初始化一个空项目
 ```shell
 $ d:
 $ cd /your_files
@@ -35,9 +35,9 @@ package name: (react_demo)
 version: (1.0.0)
 description: 从零搭建React 脚手架
 entry point: (index.js)
-test command: 
+test command:
 git repository:
-keywords: 
+keywords:
 author: RottenTree
 license: (ISC)
 About to write to D:\2myproject\react_demo\package.json:
@@ -56,7 +56,7 @@ About to write to D:\2myproject\react_demo\package.json:
 
 
 Is this OK? (yes)
-$ mkdir src 
+$ mkdir src
 ```
 现在就得到了一个最简单的 npm 目录，自带一个 package.json  管理文件。并创建一个src 文件用于存放源码。
 
@@ -92,7 +92,7 @@ module.exports = {
 ```
 
 ## 4. 引入 ECMAScript 6 语言
-### 4.1 Babel 
+### 4.1 Babel
 Babel可以方便的完成2件事。 Babel 是一个 JavaScript 编译器，能将 ES6 代码转为 ES5 代码，让你使用最新的语言特性而不用担心兼容性问题，并且可以通过插件机制根据需求灵活的扩展。 在 Babel 执行编译的过程中，会从项目根目录下的 .babelrc 文件读取配置。.babelrc 是一个 JSON 格式的文件，内容大致如下：
 ```json
 {
@@ -144,7 +144,7 @@ module.exports = {
 配置命中了项目目录下所有的 JavaScript 文件，通过 babel-loader 去调用 Babel 完成转换工作。 在重新执行构建前，需要先安装新引入的依赖：
 ```powershell
 # Webpack 接入 Babel 必须依赖的模块
-npm i -D babel-core babel-loader 
+npm i -D babel-core babel-loader
 # 根据你的需求选择不同的 Plugins 或 Presets
 npm i -D babel-preset-env
 ```
@@ -179,7 +179,7 @@ TypeScript 编译器会有和在 4 使用ES6语言中 Babel 一样的问题：�
 1. 通过 Loader 把 TypeScript 转换成 JavaScript。
 2. Webpack 在寻找模块对应的文件时需要尝试 ts,tsx 后缀。
 
-对于问题1，社区已经出现了几个可用的 Loader，推荐速度更快的 awesome-typescript-loader。 
+对于问题1，社区已经出现了几个可用的 Loader，推荐速度更快的 awesome-typescript-loader。
 对于问题2，根据2-4 Resolve 中的 extensions 我们需要修改默认的 resolve.extensions 配置项。
 
 综上，相关 Webpack 配置如下：
@@ -195,7 +195,7 @@ module.exports = {
   },
   resolve: {
     // 先尝试 ts 后缀的 TypeScript 源码文件
-    extensions: ['.tsx', '.ts', '.js'] 
+    extensions: ['.tsx', '.ts', '.js']
   },
   module: {
     rules: [
@@ -307,3 +307,8 @@ module.exports = {
 };
 ```
 &emsp;表示监听开发服务，配置内容库路径。并添加HtmlWebpackPlugin插件，使其实时编译引入Html页面中。
+
+### Demo
+* 同目录下有 Demo.
+* 目前这个Demo 只是做了一个搭最基础的脚手架而已，并没有一些代码约定格式化，编译优化，单元测试，mock数据请求等功能在里面。
+* 也并未添加React 其他的全家桶

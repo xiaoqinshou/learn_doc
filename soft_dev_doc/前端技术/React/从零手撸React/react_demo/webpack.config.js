@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     // 开发模式
@@ -27,7 +28,17 @@ module.exports = {
             },
         ]
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, 'index.html'),
+            hash: true,
+        })
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        inline: true
+    },
     // 输出 source-map 方便直接调试 ES6 源码
-    devtool: 'source-map'
+    devtool: 'source-map',
 
 };
