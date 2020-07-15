@@ -131,7 +131,7 @@ class UnusedComp extends Component {
         this.gac = g(a, c)
         this.uabc = u(a, b, c)
     }
-    
+
 
     render() {
         const { a, b, c } = this.props
@@ -208,7 +208,7 @@ UnusedComp = connect(mapStateToProps)(UnusedComp)
 let memoizeState = null
 function mapStateToProps(state) {
     const {a, b, c} = state
-    if (!memoizeState) { 
+    if (!memoizeState) {
        memoizeState =  {
             a,
             b,
@@ -239,7 +239,7 @@ function mapStateToProps(state) {
         memoizeState.b = b
         memoizeState.c = c
     }
-    
+
     return memoizeState
 }
 ```
