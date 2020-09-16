@@ -6,7 +6,6 @@
 [华为镜像官网](https://mirrors.huaweicloud.com/)
 本来想踩 8 的坑，但是没有树莓派版本的 centos 8，那没办法了只能上最新的7了。
 [下载链接](https://mirrors.huaweicloud.com/centos-altarch/7.8.2003/isos/armhfp/CentOS-Userland-7-armv7hl-RaspberryPI-Minimal-4-2003-sda.raw.xz)
-备注:  .xz是压缩文件，.raw才是系统烧录的文件格式，要先解压再烧录，别录错了
 
 ## 格式化工具
 SD卡专业的格式化工具
@@ -15,9 +14,3 @@ SD卡专业的格式化工具
 ## 系统烧录工具
 SD卡镜像烧录工具,安装完后将镜像写入
 [win32diskimager](https://sourceforge.net/projects/win32diskimager/files/latest/download)
-
-## 用户名
-```text
-账户：root
-密码：centos
-```
