@@ -19,6 +19,7 @@
 ```
 
 ## 增加SQL脚本
+路径: src/main/resources/db/migration
 名称格式：V + 版本号 + 双下划线 + 描述 + 单下划线 + 结束符。
 例如：V1__INIT_DATABASE.sql
 
