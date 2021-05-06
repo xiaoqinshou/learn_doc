@@ -8,7 +8,7 @@ n: 空气、气、空
 vt: 通风、透气、吹风晒干、烤干播送、宣扬、发表
 feel: 表示的是空气,尽情的展开与空气相关的联想即可
 
-back: 
+<span id="back">back<span>: 
 n: 背部、脊梁骨、背面、后面、后、后部
 vt: 使...后退、倒(往后退)、支持(支撑背部)
 feel: 表示的主要是后面与背部、方向行为主要是围绕着后面展开联想、身体器官主要是与背部展开联想
@@ -25,7 +25,7 @@ vt: 指向、弄尖、加标点于
 vi: 表明、指向
 feel: 点
 
-book:
+<span id="book">book</span>:
 n: 书籍、卷(古时候的书)、账簿(记账的书)、名册(点名的书)、工作簿(记工作情况用的书)
 vt: 预订、登记(都是在书上记录)
 feel: 书
@@ -52,7 +52,7 @@ n: 座位、所在地、职位
 vt: 使...坐下、可容纳...的、使就职
 feel: 位置、从物理位置和虚拟位置进行联想,就虚拟位置联想和chair是同义词,就物理联想上、主要是联想物理上的位置、包括扶手、可以说是chair的父级
 
-bridge:
+<span id="bridge">bridge</span>:
 n: 桥、桥牌、桥接器、船桥
 vt: 架桥、渡过
 feel: 桥
@@ -89,7 +89,7 @@ feel: 眼睛
 ## 动词转名词
 * 定义: 围绕着所进行的行为、固化下来统一抽象概括
 * 英语中大量动词可以转化为名词、且这类名词时常可以与动词have,make等构成短语,表示动作.
-```text
+
 attack:
 n: 攻击、抨击、疾病发作
 vt: 攻击、抨击、动手干
@@ -129,7 +129,7 @@ n: 打架、斗争、竞赛、拳击赛、争论、战斗、斗志
 v: 与...打仗、与...斗争、打架、竞争、极力反对、努力争取、争辩、参加、反对...提案
 feel: 与其他人产生良性或恶性冲突的解决方式
 
-look:
+<span id="look">look</span>:
 n: 看、样子、面容
 vt: 看、期待、注意、面向、看上去像
 vi: 看、看起来、注意、面容
@@ -170,7 +170,7 @@ n: 谈话
 v: 说、说话、谈、谈话、讲、讲话、议论、谈判
 feel: 近距离说、谈话交流一种方式、根据场合不同可以升级到讲、议论、会议、谈判等比较严肃的场合
 
-wash:
+<span id="wash">wash</span>:
 n: 洗
 v: 洗、洗涤、清洁、冲洗、洗刷
 feel: 和洗相关的联想
@@ -194,10 +194,8 @@ attempt:
 n: 试图、尝试、企图
 v: 尝试、试图、企图
 feel: 抱着侥幸会成功,希望会成功的心态去尝试去做某事
-```
 
 ## 形容词转动词
-```txt
 brave:
 adj: 勇敢、英勇、壮烈
 n: 冒险、傲
@@ -260,7 +258,6 @@ adj: 错误、错、不对
 adv: 错、邪恶
 n: 坏事、过失、怨、屈
 v: 冤屈
-```
 
 # 合成法
 * 由两个或两个以上的词组合成一个新词,这种构词法称为合成法.
@@ -270,9 +267,9 @@ v: 冤屈
 
 daybreak:
 n: 拂晓、黎明、破晓、晨
-day: 
+<span id="day">day</span>: 
 n: 日、天、白天、昼
-break:
+<span id="break">break</span>:
 n: 休息
 v: 打破、破、断
 feel: 打破的白天=黎明、拂晓
@@ -329,7 +326,7 @@ feel: 晚上+俱乐部=夜总会、夜店
 
 pocket-knife:
 n: 小刀
-pocket:
+<span id="pocket">pocket</span>:
 n: 口袋、兜、袋、袖珍
 knife: 
 n: 刀、刀子
@@ -355,7 +352,7 @@ ink-stand:
 n: 墨水架
 ink:
 n: 墨水、墨
-stand:
+<stand id="stand">stand</span>:
 n: 支架、架、台、座
 v: 站、立、忍受、经受
 feel: 站立有关的动词及物品名词联想
@@ -398,18 +395,635 @@ newspaper:
 n: 报纸
 news: 
 n: 新闻、消息、信息、音讯
-paper:
+<span id="paper">paper</span>:
 n: 纸、论文
 feel: 新闻+纸=带有新闻的纸->报纸
 
 lawsuit:
 n: 诉讼、官司、狱、讼事
-law:
+<span id="law">law</span>:
 n: 法律、规律、定律、法则、法规
 suit:
 n: 套、套装
 v: 适合、适应
 feel: 法律+套装=被法律套上->得解决->诉讼、官司、讼事
+
+### 形容词+名词
+blackboard:
+n: 黑板
+black:
+n: 黑色、黑
+adj: 黑 、墨、青
+board: 
+n: 板、木板、板子
+feel: 黑色+木板=黑板
+
+commonwealth:
+n: 联邦、国家
+common:
+adj: 共同、常见、普通、公共、普遍、一般
+wealth:
+n: 财富、丰富、富裕
+feel: 公共的财富堆在一起由国家来管理 -> 国家、联邦
+
+highway:
+n: 公路、高速公路
+<span id="high">high</span>:
+adj: 高
+<span id="way">way</span>: 
+n: 办法、路、途径、道路、路径
+feel: 达成目的方式、物理上指实际的道路、路径;精神上指达成目的办法
+feel: 高+路=高速公路、公路
+
+stronghold:
+n: 据点、要塞、堡垒、寨
+strong:
+adj: 强大、强烈、强有力、坚强
+hold:
+v: 保持、持有、保留、举行
+n: 货仓
+feel: 强大+货仓=强大的货仓 -> 堡垒、要塞、据点
+
+sweetheart:
+n: 爱人、情人、恋人
+sweet: 
+adj: 甜、甜蜜、甜美
+heart:
+n: 心、心脏、中心、内心、心灵
+feel: 甜蜜+心=甜心->恋人之间的爱称->情人、爱人、恋人
+
+easychair:
+n: 安乐椅
+easy:
+adj: 容易、简单、简易、便利
+[chair](#chair)
+feel: 简易的椅子->容易摔死->安乐死->安乐椅
+
+grandson:
+n: 孙子、孙、外孙
+grand: 
+adj: 盛大、隆重、宏大、雄伟
+son: 
+n: 儿、子
+feel: 盛大的儿子->比儿子更胜一级->孙子
+
+blueprint:
+n: 蓝图、图纸、晒图
+blue: 
+adj: 蓝、青、碧
+print:
+v: 打印、印刷、发布
+n: 版画
+feel: 蓝色的版画->蓝图->图纸、晒图
+
+deadline:
+n: 期限、限期、截稿线
+dead:
+v: 死、过世
+n: 死者、死人
+adj: 僵死、死的
+line: 
+n: 线、线路、路线
+feel: 死+线=死线->死限->最后的期限->期限、限期
+
+high-brow:
+n: 知识分子
+[high](#high)
+brow:
+n: 眉头、眉、眉毛
+feel: 高+眉毛=高眉毛->高人一等->知识分子
+
+lazy-bones:
+n: 懒骨头、懒人
+lazy:
+adj: 懒、懒惰、懒洋洋、怠、怠惰、惰
+bones:
+n: 骨、骨头
+feel: 懒惰+骨头=懒骨头、形容懒惰的人
+
+
+### 动词+名词
+drawbridge:
+n: 吊桥
+<span id="draw">draw</span>:
+v: 绘制、绘图、画、吸引、牵引、吸取、拉、划
+[bridge](#bridge)
+feel: 牵引+桥=有牵引立的桥->吊桥
+
+grindstone:
+n: 磨石
+grind: 
+v: 研磨、碾、磨、磨碎
+stone:
+n: 石头、结石、石块
+
+playground:
+n: 操场、运动场
+play:
+v: 玩
+ground:
+n: 地面、地、地基
+feel: 能玩的地面->操场、运动场
+
+pickpocket:
+n: 扒手
+pick:
+v: 挑、选、选择、摘、采摘、采
+[pocket](#pocket)
+feel: 挑、采+口袋=在口袋里挑选->扒手、小偷
+
+breakfast
+n: 早餐、早饭、早点
+[break](#break)
+fast:
+n: 快速、快、迅速
+feel: 打破、打断+快速=早餐、早饭、早点、死记硬背、实在联想不到
+
+cutthroat:
+n: 残酷
+cut: 
+v: 切、砍、斩、削、截
+throat:
+n: 喉、喉咙、咽喉、嗓子
+feel: 切砍喉咙->好残酷啊->残酷
+
+makeshift:
+n: 代用品
+adj: 凑合的、临时的
+make:
+v: 使、制作、让、使得、做、作、制造
+shift:
+n: 班、轮班
+feel: 使某人来轮班->代替上班->代替品
+
+singsong:
+n: 唱歌、歌咏会
+sing: 
+v: 唱、歌唱、鸣
+song:
+n: 歌曲、歌、曲、曲子
+feel: 唱歌
+
+turncoat:
+n: 叛徒、变节分子
+turn:
+v: 转、转动、翻、轮流
+<span id="coat">coat</span>:
+n: 涂层、外套、外衣、上衣
+feel: 翻转外套->变节分子->叛徒
+
+washbasin:
+n: 脸盆、洗脸盆
+[wash](#wash)
+basin:
+n: 盆地、盆、水池、水盆
+feel: 洗+盆=洗脸盆、脸盆
+
+### 副词虚词+名词
+afterthought:
+事后:
+after:
+adv: 后、以后、后面
+prep: 之后、经过、以后
+conj: 然后、接着、随之以后
+adj: 以后的
+thought:
+n: 思想、思维、思
+feel: 以后+思想=以后的思想->事后(好牵强啊)
+
+offshoot:
+n: 分支、侧枝
+<span id="off">off</span>: 
+adv: 隔断
+prep: 离、离去
+adj: 右、空闲的
+shoot:
+v: 射击、射、打、毙
+n: 芽、发射
+feel: 隔断+芽=侧枝=分支
+
+outbreak:
+n: 发作、发病、突发
+v: 爆发
+<out id="out">out</span>:
+v: 赶出、逐出
+adj: 大、边上的、广大的
+adv: 过去、明显的
+prep: 到...外面
+[break](#break)
+feel: 发作、发病、突发
+
+byway:
+n: 绕道
+<span id="by">by</span>:
+prep: 通过、由、以、将、靠、截至
+adv: 经过、近旁
+adj: 附近的、附随的
+[way](#way)
+feel: 绕道
+
+bylaw:
+n: 规章
+[by](#by)
+[law](#law)
+feel: 通过法律、法则->规章
+
+outpost:
+n: 前哨、前哨部队、前哨地点
+[out](#out)
+post: 
+n: 邮、职位、岗位、柱、职务
+v: 邮递、邮寄
+feel: 明显的+岗位=明显的岗位->前哨、前哨部队、前哨地点
+
+overcoat:
+n: 大衣
+over:
+adv: 过度、太、开外
+prep: 以上、之外、在...之上
+n: 多余、剩余、余额
+adj: 上面的、外面的
+[coat](#coat)
+
+underclothes:
+n: 内衣、衬衣、内衣裤
+under:
+prep: 下、根据、之下、以下、下面、底下、在...之下
+adv: 在下边、在下面
+clothes:
+n: 衣服、服装、衣裳、衣着
+feel: 在下面的衣服->内衣、衬衣、内衣裤
+
+outgrowth:
+n: 成长、发展、发达、赘生物
+[out](#out)
+growth:
+n: 生长、发展、发育
+feel: 明显的+生长、发育->成长、发展、发达
+
+downpour:
+n: 倾盆大雨、瓢泼大雨、骤雨
+<span id="down">down<span>:
+adv: 下、向下
+v: 往下、击落
+prep: 往下、沿着
+n: 绒毛、毯
+pour:
+v: 倒、倾倒、浇注、倾注、注入
+n: 倾泻、骤雨
+feel: 往下倒、倾泻->倾盆大雨、瓢泼大雨
+
+upkeep:
+n: 保养、修理
+<span id="up">up</span>:
+adv: 向上、上、到、一直
+prep: 截至、临到
+<span id="keep">keep</span>:
+v: 保持、保留、保存、维持、保守、保管
+n: 养活、供养
+feel: 向上保持、保存->保养、维修
+
+
+bystander:
+n: 旁观者
+[by](#by)
+[stand](#stand)
+feel: 近旁的站立者->旁观者
+
+### 副词虚词+动词
+income:
+n: 收入、所得、收益、经济
+<span id="in">in</span>: 
+prep: 在...之内、中、里
+come: 
+v: 来、来到、过来、发生
+feel: 在..之内+来->来..里面->来口袋里面->收入、所得
+
+outlet:
+n: (感情、思想、精力发泄的)出路; 表现机会; 专营店; 经销店; 折扣品经销店;
+[out](#out)
+<span id="let">let</span>: 
+v: 让、允许、给、出租、放出
+feel: 赶出+允许->允许出去->出口、出路
+
+onset:
+n: 开端、发生(尤指不快的事件)
+on:
+prep: 上、关于、于、就、上面、上边、在...之上
+<span id="set">set</span>: 
+n: 组、集、一套、集合、套、盘、系列
+v: 定
+feel: 尤指不快的事件的发生
+
+outlook: 
+n: 观点; 见解; 世界观; 人生观; 前景; 可能性; 景色; 景致; 景观;
+[out](#out)
+[look](#look)
+feel: 过去+看见->过去看见的、了解过的东西-> 观点、见解、世界观、人生观、前景、可能性
+
+outfit:
+n: 全套服装，装束(尤指为某场合或目的); 团队; 小组; 分队; 全套装备; 成套工具;
+v: 装备; 配置设备; 供给服装;
+[out](#out)
+fit:
+v: (形状和尺寸)适合，合身; (大小、式样、数量适合)可容纳，装进; 试穿(衣服);
+adj: 健壮的; 健康的; (质量、素质或技能)适合的，恰当的，合格的; 可能(或准备)做某事至极端程度;
+n: (癫痫等的)突发，发作; 昏厥; 痉挛; 一阵(忍不住的咳嗽、笑); (强烈感情)发作，冲动;
+feel: 合身名词->什么合身呢?转换为物质->全套服装->合身虚拟化->团队、小组很适合
+
+inlet:
+n: (海、湖伸向陆地或岛屿间的)小湾，水湾; (液体、空气或气体进入机器的)入口，进口;
+v: 引进; 嵌入; 插入;
+[in](#in)
+[let](#let)
+feel: 里+允许->允许进去的名词有哪些->入口、进口、小湾、水湾->进入的动作-> 引进、嵌入、插入
+
+offspring:
+n: 孩子; 子女; 后代; 崽兽; 幼崽; 幼苗;
+[off](#off)
+spring:
+n: 春天; 春季; 弹簧; 发条; 弹性; 弹力;
+v: 跳; 跃; 蹦; 突然猛烈地移动; 突如其来地做; 冷不防地问; 突然说;
+feel: 孩子、后代的意思(泛指所有生物的后代)
+
+out-burst:
+n: (感情的)爆发，迸发; (活动)激增; (态度)激化;
+[out](#out)
+burst:
+v: (使)爆裂，胀开; 猛冲; 突然出现; 爆满; 涨满;
+n: 突发; 猝发; 迸发; 爆破; 爆裂; 裂口; 一阵短促的射击;
+feel: 过去的爆裂、胀开->积累了很久才爆裂->多指感情上的爆发、迸发、激增、激化
+
+offset:
+v: 抵消; 弥补; 补偿;
+adj: 胶印的;
+n: 开端; 出发; 平版印刷; 抵消; 补偿;
+[off](#off)
+[set](#set)
+feel: 抵消、弥补、补偿 
+
+### 动词+副词
+die-hard:
+n: 顽固分子
+adj: 顽固的
+die: 
+v: 死、死亡、凋谢、消失、消亡、灭亡、停止运转
+n: 模具、冲压、压模
+hard: 
+adj: 坚固的、坚硬的、结束的、难做的、难懂得、难以回答的、困苦的、艰苦的、艰难的
+adv: 努力地、费力地、艰难地、猛力地、猛烈地
+feel: 顽固分子
+
+breakdown:
+n: (车辆或机器的)故障，损坏; (关系的)破裂; (讨论、系统的)失败; 数字细目; 分类;
+[break](#break)
+[down](#down)
+feel: 破+下->物理上机械破了停下运转->故障、损坏->关系破了->破裂->讨论上的破了->失败
+
+drawback:
+n: 缺点、不利条件
+[draw](#draw)
+[back](#back)
+feel: 绘画+背部->把背部记录下来->背部、别人直接看不到的地方->不好地方不想被别人看见->缺点、不利条件、不愿被人看到
+
+set—up:
+n: 体制;组织方式;建制; 陷害;栽赃; (软件或硬件的)安装，设置;
+[set](#set)
+[up](#up)
+feel: 集合 + 上 -> 集合有利于向上发展 -> 体制、组织方式、建制、安装、设置
+
+break-up:
+n: (婚姻、关系或联系的)破裂，终结; (组织或国家的)分裂，解体;
+[break](#break)
+[up](#up)
+feel: 破 + 上 -> 破升级 -> 破裂、终结、分裂、解体
+
+farewell: 
+n: 告别、辞行
+v: 再见、再会
+fare: 
+n: 车费、船费、飞机票价、饭菜
+v: 成功(或不成功、更好等)
+well: 
+adv: 好; 对; 令人满意地; 完全地; 彻底地; 全部地; 很; 相当; 大大地; 远远地;
+adj: 健康; 身体好; 状态良好; 情况良好; 明智; 可取; 好主意;
+int: (表示惊奇、愤怒或宽慰)哎呀，哟，啊，好啦; (承认某事不可改变)唉，好吧; (勉强同意)嗯;
+n: 井; 水井; 楼梯井; 电梯井道; (法庭中的)律师席;
+v: 涌出; 冒出; 流出; 溢出; 涌起; 迸发;
+feel: 告别、辞行、再见、再会
+
+stand-still:
+n: 停止、停顿、停滞
+[stand](#stand)
+still:
+adv: 还; 还是; 仍然; 依旧; (虽然…)还是; 但; 不过; (加强比较级)还要，更;
+adj: 静止的; 平静的; 安静的; 寂静的; 无风的; 不含碳酸气的; 不起泡的;
+n: (电影或录像的)定格画面; 剧照; (制酒的)蒸馏器;
+v: (使)静止，平静，安静;
+feel: 站立 + 还 ->还在直立->停止、停顿、停滞
+
+feedback: 
+n: 反馈的意见(或信息); (电器的)反馈噪音;
+feed: 
+v: 给(人或动物)食物; 喂养; 饲养; 进食; 养，养活(全家、一群人);
+n: (婴儿的)一次喂奶，一餐; (动物的)一次喂给的饲料; 动物的饲料; 植物的肥料; (机器的)进料;
+[back](#back)
+feel: 喂养 + 返回 -> 反馈喂养的好不好 -> (动物之间)反馈意见、信息、物理之间反馈信号、噪音等
+
+### 名词+动名词
+book-keeping:
+n: 记账、簿记、管帐
+[book](#book)
+[keep](#keep)
+feel: 记账 + 保持 -> 记账保持下来 -> 记账本、簿记、管账
+
+town-planning:
+n: 城镇规划
+town:
+n: 镇、镇市、集镇、居民、市民
+palnning:
+n: 计划制定、规划过程
+v: 精心安排、计划、谋划、打算、期待
+feel: 镇 + 规划、计划 -> 城镇规划
+
+letter-writing:
+n: 写信、书信写作、信件
+letter: 
+n: 信、函、字母
+v: 用字母标注
+<span id="writing">writing</span>:
+n: 写、书写、写作、著作
+v: 书写、写字、写作、作曲、写信
+feel: 信 + 写 -》 写信、书信写作
+
+word-building:
+n: 构词法、构词
+word:
+n: 单词、词、字、说的话、言语、诺言、许诺
+v: 措辞、用词
+building:
+n: 建筑物、房子、楼房、建筑、建筑业
+v: 建筑、建造、创建、开发、逐渐增强
+feel: 单词 + 建筑 -> 单词构建、构词法、构词
+
+tiger-hunting:
+n: 猎虎
+tiger:
+n: 老虎
+hunting:
+n: 狩猎运动、打猎、寻找
+v: 打猎、猎取、猎杀、寻猎、搜索、追踪、追捕
+feel: 老虎 + 狩猎-> 狩猎老虎、猎虎
+
+paper-manufacturing:
+n: 纸张制造业、造纸业
+[paper](#paper)
+manufacturing:
+n: 制造业
+v: 大量生产、成批制造、编造、捏造、生产
+feel: 报纸 + 制造业 -> 纸张制造业、造纸业
+
+bill-collecting:
+n: 套账、收账
+bill:
+n: 账单; (餐馆的)账单; (提交议会讨论的)议案，法案;
+v: 给(某人)开账单，发账单(要求付款); 把(某人或事物)宣传为…; 宣布…将做某事;
+collecting:
+adj: (罐子或盒子)用于募集捐款的;
+v: 收集; 采集; 收藏; 搜集; 聚集; 集合; 汇集;
+feel: 账单+收集-> 账单收集-> 收账
+
+car-repairing:
+n: 修车
+car:
+n: 小汽车; 轿车; 火车车厢; (某种类型的)火车车厢;
+repariring:
+v: 修理; 修补; 修缮; 补救; 纠正; 弥补;
+feel: 车 + 修理 -> 修车
+
+television-advertising:
+n: 电视广告
+television:
+n: 电视机; 电视节目; 电视; 电视系统; 电视学; 电视广播业;
+advertising:
+n: 广告活动; 广告业; 做广告;
+v: (为…)做广告; 登广告; (在报纸、公共场所公告牌、互联网等上)公布，征聘; 展现，宣传(自己的事);
+feel: 电视机+广告->电视广告
+
+window-shopping:
+n: 展销橱窗
+window:
+n: 窗户、窗口
+shopping:
+n: 购物; 从商店采买的东西;
+v: 去商店买; 在商店购物; 逛商店; (向警察等)告发;
+feel: 窗户+购买-> 买窗户-> 展销橱窗里   
+
+day-dreaming:
+n: 白日梦
+[day](#day)
+[dream](#dream)
+feel: 白天 + 梦 -> 白日梦
+
+photocopying
+v: 影印; 复制; 复印; 影印得好 / 不好;
+photo:
+n: 照片、相片
+copying:
+n: 复制、复印、仿造、临摹
+feel: 影印、复制、复印
+
+handwriting:
+n: 手写、书写、笔迹、书法
+hand:
+n: 手; 用…手的; 用…只手的; 帮助; 协助;
+v: 交; 递; 给;
+[writing](#writing)
+feel: 手+写->手写->突出手写的近义词->书写、笔迹、书法
+
+### 其他
+```txt
+man-of-war: 战争之人
+forget-me-not: 别忘记我
+son-in-law: 女婿-> 在规矩里面的儿子
+mother-in-law: 婆婆、岳母 -> 规矩里面的妈妈
+commander-in-chief: 总司令、统帅 -> 负责人、司令官里最重要的
+editor-in-chief: 总编辑、主编 -> 编辑里面最重要的
+merry-go-round: 旋转木马、走马灯 -> 愉快的走着旋转
+hide-and-seek: 捉迷藏 -> 藏和找
+stay-at-home: 看家、宅、不爱出门的人 -> 呆在家里的人
+jack-in-the-box: 玩偶匣 -> jack在盒子里
+```
+
+### 动名词+名词拓展
+drinking: 喝酒、饮酒
+water: 水
+listening: 听
+material: 布料、材料
+waiting-room: 等候室、候车室、候诊室->等待的房间
+looking-glass: 镜子 -> 看得见的玻璃是镜子
+stepping-stone: 垫脚石、踏脚石-> 踩着石头
+running: 跑步、管理、操纵
+mate: 朋友、伙伴、哥们儿、伙计、老兄
+
+### 动名词+副词虚词
+swearing-in: 宣誓就职-> 发誓、表决心 进来/入驻
+going-over: 彻底检查、仔细审查、痛打 -> 走 + 从头到尾
+
+### 副词+动名词
+uprising: 起义、暴动、造反 -> 上+起义、叛乱
+well-being: 健康、安乐、康乐 -> 好的/令人满意的 + 存在、活着 -> 健康
+
+
+## 合成形容词
+### 数词+名词(+形容词)
+a five-year-old boy: 一个五岁的男孩 -> 五 + 年 + 老 + 男孩
+a four-hour trip: 一次四小时的旅行 -> 4 + 时 + 旅行
+100-metre dash: 百米赛跑 -> 100 + 米 + 猛冲
+an 800-metre-long bridge: 一座八百米长的桥 -> 800 + 米 + 长 + 桥
+
+### 形容词+名词-ed
+a white-haried girl: 一个白头发的女孩 -> 白色 + 毛发 + 女孩
+a warm-hearted woman: 一个热心的妇女 -> 温暖的 + 心 + 女人
+a near-sighted boy: 一个眼睛近视的男孩 -> 近的 + 看得见 + 男孩
+two middle-aged men: 两个中年男人 -> 中间 + 年龄 + 男人们
+a light-hearted boy: 一个无忧无虑的男孩 -> 光亮 + 心 + 男孩
+a three-legged table: 一张三条腿的桌子 -> 3 + 腿 + 桌子
+a one-armed old man: 一个独臂老人 -> 1 + 胳膊 + 老 + 男人
+
+### 形容词+分词(包括现在分词和过去分词)
+clean-washed clothes: 洗干净了的衣服 -> 干净 + 洗 + 衣服
+an ordinary-looking man: 一个相貌平平的男人 -> 普通 + 看起来 + 男人
+an easy-going man: 一个随和的人 -> 简单 + 走 + 男人
+fresh-baked bread: 刚烤好的面包 -> 新鲜的 + 烘烤 + 面包
+ready-made goods: 现成的货物 -> 准备好 + 制作 + 货物
+
+### 副词+分词(包括现在分词和过去分词)
+hard-working people: 勤劳的人们 -> 努力的 + 工作 + 人们
+bravely-fighting soldiers: 勇敢战斗的战士 -> 勇敢的 + 战斗 + 军人
+a well-know singer: 一个有名的歌唱家 -> 好 + 知道 + 歌唱家
+
+### 名词+分词(包括现在分词和过去分词)
+a man-made satellite: 一颗人造卫星 -> 人 + 制造 + 卫星
+peace-loving people: 热爱和平的人们 -> 和平 + 爱 + 人们
+a man-eating animal: 一种吃人的动物 -> 人 + 吃 + 动物
+a snow-covered hill: 一座被雪覆盖了的小山 -> 雪 + 覆盖 + (小))山
+
+### 名词+形容词
+war-weary soldiers: 厌战的士兵 -> 战争 + 疲倦 + 士兵
+a watertight watch: 一只防水手表 -> 水 + 紧紧的 + 手表
+a homesick woman: 一个想家的女人 -> 思乡病(家 + 生病) + 女人
+
+### 形容词+名词
+a full-time job: 专职工作 -> 满的 + 时间 + 工作
+a second-hand material: 二手材料 -> 其次(第二) + 手 + 材料
+a high-level living standard: 高水平的生活标准 -> 高 + 等级 + 生活 + 标准、水平
+
+### 形容词+形容词
+a grey-green car: 一辆灰绿色的小汽车 -> 灰色 + 绿色 + 小汽车
+a deaf-mute boy: 一个聋哑男孩 -> 聋的 + 沉默、不出声 + 男孩
+a socio-economic book: 一本社会经济学书 -> 社会 + 经济 + 书
+
 
 # 词性
 简写|英文|中文|解释
