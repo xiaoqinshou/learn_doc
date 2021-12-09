@@ -133,6 +133,8 @@ acme.sh --install-cert -d <tdom.ml> --key-file /usr/local/etc/certfiles/private.
 2) 配置acme.sh自动更新和自动更新证书，这样配置完Trojan之后一般不用管服务器。
 ```shell
 acme.sh  --upgrade  --auto-upgrade
+# 手动更新证书
+acme.sh --cron -f
 ```
 
 3)  修改权限
