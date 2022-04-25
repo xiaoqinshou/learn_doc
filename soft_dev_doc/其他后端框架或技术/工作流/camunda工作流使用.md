@@ -1218,6 +1218,44 @@ public class DemoTestTask implements JavaDelegate, Serializable {
 * 可在平台上启动起来  这样能自动跑完，所有的业务判断修改对应的节点，新增类似于 DemoTestTask 的方法绑定也行，调用方法也行。
 * 然后再对应的方法中调用第三方甚至其它业务行为，这样达到一个完全只是用camunda 流程管理并不使用它的平台的效果。
 
+## camunda 历史数据清理
+* 这一步很重要，不清楚历史流程数据，只会导致系统审核流程越跑越慢
+* 官网文档: https://docs.camunda.org/manual/7.12/user-guide/process-engine/history/
+```yml
+# camunda历史清理配置
+camunda:
+    bpm:
+        generic-properties:
+            properties:
+            	# 历史记录级别设置
+                history: full
+                # 批量清理运行时间窗口：设置在每天20：00-22：00
+                # historyCleanupBatchWindowStartTime: "20:00"
+                # historyCleanupBatchWindowEndTime: "22:00"
+
+                # 批量清理运行时间窗口：设置在周日18：00-22：00
+                sundayHistoryCleanupBatchWindowStartTime: "18:00"
+                sundayHistoryCleanupBatchWindowEndTime: "22:00"
+
+                # 清理策略：基于移除时间
+                historyCleanupStrategy: removalTimeBased
+
+                # 基于移除时间清理策略，进一步基于开始/结束时间+TTL计算removal_time_
+                historyRemovalTimeStrategy: start
+                # historyRemovalTimeStrategy: end
+
+                # TTL 生存时间 90天
+                batchOperationHistoryTimeToLive: P90D
+
+                historyTimeToLive: P90D
+
+                # 用于历史清理的并行作业数，后期可以调小该数据
+                historyCleanupDegreeOfParallelism: 4
+
+                # 单次批量处理实例数
+                historyCleanupBatchSize: 100
+```
+
 ## bpmn 规范 xml 标签头
 * 因为生成bpmn 流程的方法很多种，但是有些需要后期改动加入新标签定义的可以参考一下的标签头按需添加
 ```xml
