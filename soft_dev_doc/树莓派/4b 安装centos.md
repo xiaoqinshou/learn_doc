@@ -42,6 +42,18 @@ armv8是64位操作系统
     3. CecOS CaaS 容器云管理平台 登录界面
     登录地址 https://你树莓派的IP地址:8443
     说明：默认管理账户 admin , 默认密码：password 。请登录后立即修改默认密码！！
+### Chromium浏览器界面显示错误
+* 问题根源：
+> 您可能会在 版本20200615 U3 上看到此问题，因为我们更改了mesalib，应该使用另一种方式设置Chromium。
+
+* 解决办法：
+运行命令：
+```
+sudo sed -i  \
+'s/"hardware_acceleration_mode":{"enabled":true},/"hardware_acceleration_mode":{"enabled":false},/' \
+/home/pi/.config/chromium/Local\ State
+```
+然后重新打开您的Chromium浏览器。
 
 ## 格式化工具
 SD卡专业的格式化工具

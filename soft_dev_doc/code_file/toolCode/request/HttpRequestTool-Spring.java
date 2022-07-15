@@ -8,7 +8,7 @@ public class HttpRequestTool {
         this.closeableHttpClient = closeableHttpClient;
     }
 
-    //Ìá½»ÇëÇó
+    //ï¿½á½»ï¿½ï¿½ï¿½ï¿½
     private String submit(final HttpRequestBase requestBase) {
         requestBase.setHeader("Content-Type", "application/json;charset=UTF-8");
         requestBase.setHeader("Accept", "application/json");
@@ -46,8 +46,7 @@ public class HttpRequestTool {
 
     public String sendGet(String uriPath, List<NameValuePair> ns)
             throws URISyntaxException {
-        URIBuilder uri = new URIBuilder();
-        uri.setPath(uriPath);
+        URIBuilder uri = new URIBuilder(uriPath);
         uri.addParameters(ns);
         URI u = uri.build();
         return this.submit(new HttpGet(u));
@@ -55,8 +54,7 @@ public class HttpRequestTool {
 
     public String sendPost(String uriPath, List<NameValuePair> ns)
             throws URISyntaxException {
-        URIBuilder uri = new URIBuilder();
-        uri.setPath(uriPath);
+        URIBuilder uri = new URIBuilder(uriPath);
         uri.addParameters(ns);
         URI u = uri.build();
         return this.submit(new HttpPost(u));
@@ -64,7 +62,7 @@ public class HttpRequestTool {
 
     public String sendPost(String uriPath, JSONObject jsonObject) {
         HttpPost httpPost = new HttpPost(uriPath);
-        StringEntity entity = new StringEntity(jsonObject.toString(), "utf-8");//½â¾öÖÐÎÄÂÒÂëÎÊÌâ
+        StringEntity entity = new StringEntity(jsonObject.toString(), "utf-8");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         entity.setContentEncoding("UTF-8");
         entity.setContentType("application/json");
         httpPost.setEntity(entity);

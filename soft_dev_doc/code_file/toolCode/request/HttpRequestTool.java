@@ -1,4 +1,4 @@
-import net.minidev.json.JSONObject;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -21,9 +21,8 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 @Service
+@Slf4j
 public class HttpRequestTool {
-    protected static final Logger log = LoggerFactory.getLogger(HttpRequestTool.class);
-
     //获取连接池
     private CloseableHttpClient getPool() {
         return HttpClientPool.getSingleton();
@@ -62,8 +61,7 @@ public class HttpRequestTool {
 	// 有自定义请求头的需求重载几个方法
     public String sendGet(String uriPath, List<NameValuePair> ns)
         throws URISyntaxException {
-        URIBuilder uri = new URIBuilder();
-        uri.setPath(uriPath);
+        URIBuilder uri = new URIBuilder(uriPath);
         uri.addParameters(ns);
         URI u = uri.build();
         return this.submit(new HttpGet(u));
@@ -71,8 +69,7 @@ public class HttpRequestTool {
 
     public String sendPost(String uriPath, List<NameValuePair> ns)
         throws URISyntaxException {
-        URIBuilder uri = new URIBuilder();
-        uri.setPath(uriPath);
+        URIBuilder uri = new URIBuilder(uriPath);
         uri.addParameters(ns);
         URI u = uri.build();
         return this.submit(new HttpPost(u));

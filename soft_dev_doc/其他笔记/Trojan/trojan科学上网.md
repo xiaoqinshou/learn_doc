@@ -261,6 +261,12 @@ sudo systemctl restart nginx
 sudo systemctl status nginx
 ```
 
+## 启动bbr加速
+安装BBR家族安装集成脚本
+```shell
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+```
+
 ## 配置Trojan和Nginx开机自启
 ```shell
 sudo systemctl enable trojan
