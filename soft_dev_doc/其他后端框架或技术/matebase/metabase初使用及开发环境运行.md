@@ -17,15 +17,15 @@ $ yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
 ```
 ### 4. windows 下个性化配置
 打开 package.json 文件 里面命令大都是给予 linux 下的命令 会产生不兼容的情况，所以需要更改一些命令
-```json
-# 添加一个插件，用于实现无法跨平台的命令
+```json5
+// 添加一个插件，用于实现无法跨平台的命令
 "dependencies": {
 "cross-env": "^5.2.0",
 }
 
-# 此命令记得加上 cross-env
-# dev 命令，将单引号修改为双引号并转义，单引号它会当做普通字符串处理
-# 删除preinstall 检查命令，因为这就是检查linux 环境是否齐全，在Windows下无法使用
+// 此命令记得加上 cross-env
+// dev 命令，将单引号修改为双引号并转义，单引号它会当做普通字符串处理
+// 删除preinstall 检查命令，因为这就是检查linux 环境是否齐全，在Windows下无法使用
 "scripts":{
     "build-hot": "yarn && cross-env NODE_ENV=hot webpack-dev-server --progress",
     "dev": "concurrently --kill-others -p name -n \"backend,frontend,docs\" -c \"blue,green,yellow\" \"lein run\" \"yarn build-hot\" \"yarn docs\"",

@@ -146,7 +146,7 @@ OPTIONS：获取信息，关于资源的哪些属性是客户端可以改变的�
 ```
 下面是一些例子。
 
-``` http
+```http
 GET /zoos：列出所有动物园 HTTP/1.1
 POST /zoos：新建一个动物园 HTTP/1.1
 GET /zoos/ID：获取某个指定动物园的信息 HTTP/1.1

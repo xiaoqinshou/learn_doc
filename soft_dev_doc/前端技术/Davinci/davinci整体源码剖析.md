@@ -1,7 +1,7 @@
 # Davinci 源码剖析
 [toc]
 ## 项目文件结构
-```file
+```makefile
 + assembly
     -src
     -pom.xml

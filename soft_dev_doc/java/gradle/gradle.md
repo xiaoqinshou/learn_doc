@@ -14,7 +14,7 @@
 ## 安装gradle
 * 折腾了小半天了, 还是自己安装吧, 不用idea的自带的了. 
 * 偷个懒用 `brew` 安装, 环境变量也懒得配了
-```
+```shell
 brew update && brew install gradle
 ```
 
@@ -81,7 +81,7 @@ BUILD SUCCESSFUL
 ```
 
 ## 文件结构
-``` 
+```makefile
 ├── gradle  1
 │   └── wrapper
 │       ├── gradle-wrapper.jar
@@ -169,7 +169,7 @@ dependencies {
 ```
 
 ### 依赖方式
-```
+```text
 api
 引入需要的依赖包，使用此关键字引用的依赖可以逐级传递到各个依赖的模块中。作用范围大。
 
@@ -216,7 +216,7 @@ default延伸runtimeElements
 ### 引入lombok
 * 仅编译依赖, 以及注解处理
 * [原文地址](https://projectlombok.org/setup/gradle)
-```gradle
+```groovy
 dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
