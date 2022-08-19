@@ -1,0 +1,217 @@
+- 大数据组件
+  - 大数据调度平台搭建
+    - [搭建大数据调度处理平台](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%E8%B0%83%E5%BA%A6%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA%2F%E6%90%AD%E5%BB%BA%E5%A4%A7%E6%95%B0%E6%8D%AE%E8%B0%83%E5%BA%A6%E5%A4%84%E7%90%86%E5%B9%B3%E5%8F%B0.md)
+  - [大数据应用](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BA%94%E7%94%A8.md)
+  - [数据采集做法](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2F%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%81%9A%E6%B3%95.md)
+  - flink
+    - [demo](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fflink%2Fdemo.md)
+    - [Flink安装](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fflink%2FFlink%E5%AE%89%E8%A3%85.md)
+  - hadoop
+    - [安装文档](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhadoop%2F%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3.md)
+    - [常见错误](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhadoop%2F%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF.md)
+    - [Java安装](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhadoop%2FJava%E5%AE%89%E8%A3%85.md)
+  - hbase
+    - [安装文档](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhbase%2F%E5%AE%89%E8%A3%85%E6%96%87%E6%A1%A3.md)
+    - [使用基础](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhbase%2F%E4%BD%BF%E7%94%A8%E5%9F%BA%E7%A1%80.md)
+    - [ssh免密](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhbase%2Fssh%E5%85%8D%E5%AF%86.md)
+  - [host配置](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhost%E9%85%8D%E7%BD%AE.md)
+  - zookeeper
+    - [zookeeper安装](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fzookeeper%2Fzookeeper%E5%AE%89%E8%A3%85.md)
+- 非自己写的文档
+  - [kafka](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2Fkafka.md)
+  - [MySQL](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2FMySQL.md)
+  - [REDIS](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2FREDIS.md)
+- 基础算法
+  - [排序算法](%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%2F%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95.md)
+  - [搜索算法](%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%2F%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95.md)
+- 架构知识
+  - [RESTful架构](%E6%9E%B6%E6%9E%84%E7%9F%A5%E8%AF%86%2FRESTful%E6%9E%B6%E6%9E%84.md)
+- 金融学
+  - 证券投资
+    - [证券市场导论](%E9%87%91%E8%9E%8D%E5%AD%A6%2F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%2F%E8%AF%81%E5%88%B8%E5%B8%82%E5%9C%BA%E5%AF%BC%E8%AE%BA.md)
+- 面试题
+  - [网络编程](%E9%9D%A2%E8%AF%95%E9%A2%98%2F%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
+- 其他笔记
+  - Trojan
+    - [trojan科学上网](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2FTrojan%2Ftrojan%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.md)
+  - v2ray
+    - [vps搭建](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2Fv2ray%2Fvps%E6%90%AD%E5%BB%BA.md)
+- 其他后端框架或技术
+  - 队列
+    - kafka
+      - [常用命令](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E9%98%9F%E5%88%97%2Fkafka%2F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+  - 工作流
+    - [工作流引擎对比](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%E5%AF%B9%E6%AF%94.md)
+    - [camunda工作流使用](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%2Fcamunda%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BD%BF%E7%94%A8.md)
+  - docker
+    - [安装部署](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fdocker%2F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2.md)
+  - Jhipster
+    - [new jhipster](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2FJhipster%2Fnew%20jhipster.md)
+  - matebase
+    - [metabase初使用及开发环境运行](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fmatebase%2Fmetabase%E5%88%9D%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%BF%90%E8%A1%8C.md)
+- 前端技术
+  - 工程化
+    - [工程化常用插件(挖坑,未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
+    - [npm,yarn代理下载依赖](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2Fnpm%2Cyarn%E4%BB%A3%E7%90%86%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96.md)
+  - 前端文档工程
+    - [技术选型](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3%E5%B7%A5%E7%A8%8B%2F%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B.md)
+  - 随手记
+    - [记一次html2canvas + RevealJS + jsPDF网页PPT转PDF的问题](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E8%AE%B0%E4%B8%80%E6%AC%A1html2canvas%20%2B%20RevealJS%20%2B%20jsPDF%E7%BD%91%E9%A1%B5PPT%E8%BD%ACPDF%E7%9A%84%E9%97%AE%E9%A2%98.md)
+    - [记一次react-grid-layout的源码修改使用](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E8%AE%B0%E4%B8%80%E6%AC%A1react-grid-layout%E7%9A%84%E6%BA%90%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BD%BF%E7%94%A8.md)
+    - [请求跨域问题](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E8%AF%B7%E6%B1%82%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98.md)
+  - Ant Desgin Pro
+    - [ADP-TypeScript-dva踩坑](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FADP-TypeScript-dva%E8%B8%A9%E5%9D%91.md)
+    - [ADP-TypeScript](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FADP-TypeScript.md)
+    - [ADP踩坑](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FADP%E8%B8%A9%E5%9D%91.md)
+    - [ADP服务器代理配置](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FADP%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.md)
+    - [ADP后端一体化](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FADP%E5%90%8E%E7%AB%AF%E4%B8%80%E4%BD%93%E5%8C%96.md)
+    - [ant desgin 搭建](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2Fant%20desgin%20%E6%90%AD%E5%BB%BA.md)
+    - [Ant Desgin Pro 搭建](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FAnt%20Desgin%20Pro%2FAnt%20Desgin%20Pro%20%E6%90%AD%E5%BB%BA.md)
+  - canvas
+    - [canvas常用操作](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fcanvas%2Fcanvas%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md)
+  - css
+    - [css单位](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fcss%2Fcss%E5%8D%95%E4%BD%8D.md)
+    - [css单位(坑未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fcss%2Fcss%E5%8D%95%E4%BD%8D(%E5%9D%91%E6%9C%AA%E5%A1%AB).md)
+  - Davinci
+    - [davinci整体源码剖析](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FDavinci%2Fdavinci%E6%95%B4%E4%BD%93%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90.md)
+  - dva
+    - [dva项目创建](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fdva%2Fdva%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA.md)
+  - ECharts
+    - [ECharts新使用规范说明](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FECharts%2FECharts%E6%96%B0%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83%E8%AF%B4%E6%98%8E.md)
+  - javascript
+    - [js 伪异步机制](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fjavascript%2Fjs%20%E4%BC%AA%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6.md)
+    - [Promise](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fjavascript%2FPromise.md)
+    - [Promise(坑未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fjavascript%2FPromise(%E5%9D%91%E6%9C%AA%E5%A1%AB).md)
+  - React
+    - 从零手撸React
+      - [从零手撸React](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2F%E4%BB%8E%E9%9B%B6%E6%89%8B%E6%92%B8React%2F%E4%BB%8E%E9%9B%B6%E6%89%8B%E6%92%B8React.md)
+    - [Immutable](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2FImmutable.md)
+    - [react-intl](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-intl.md)
+    - [react-redux](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-redux.md)
+    - [react-router](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-router.md)
+    - [react-router传值方式](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-router%E4%BC%A0%E5%80%BC%E6%96%B9%E5%BC%8F.md)
+    - [react-saga(挖坑,未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-saga(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
+    - [reselect](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freselect.md)
+  - typescript
+    - [常用类型定义](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Ftypescript%2F%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89.md)
+  - webWorker
+    - [webWorker工具封装问题](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FwebWorker%2FwebWorker%E5%B7%A5%E5%85%B7%E5%B0%81%E8%A3%85%E9%97%AE%E9%A2%98.md)
+- 设计模式
+  - [策略模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)
+  - [代理模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F.md)
+  - [单例模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
+  - [迭代器模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.md)
+  - [复合模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E5%A4%8D%E5%90%88%E6%A8%A1%E5%BC%8F.md)
+  - [工厂模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F.md)
+  - [观察者模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+  - [命令模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F.md)
+  - [模板模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F.md)
+  - [其他模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E5%85%B6%E4%BB%96%E6%A8%A1%E5%BC%8F.md)
+  - [设计模式总结](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E6%80%BB%E7%BB%93.md)
+  - [适配器模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F.md)
+  - [装饰者模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
+  - [状态模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.md)
+- 树莓派
+  - [4b 安装centos](%E6%A0%91%E8%8E%93%E6%B4%BE%2F4b%20%E5%AE%89%E8%A3%85centos.md)
+  - [扩展内存卡](%E6%A0%91%E8%8E%93%E6%B4%BE%2F%E6%89%A9%E5%B1%95%E5%86%85%E5%AD%98%E5%8D%A1.md)
+- 数据结构
+  - [表，栈，队列](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E8%A1%A8%EF%BC%8C%E6%A0%88%EF%BC%8C%E9%98%9F%E5%88%97.md)
+  - [散列](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E6%95%A3%E5%88%97.md)
+  - [树](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E6%A0%91.md)
+  - [算法分析(难点，日后补充)](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90(%E9%9A%BE%E7%82%B9%EF%BC%8C%E6%97%A5%E5%90%8E%E8%A1%A5%E5%85%85).md)
+  - [引论](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E5%BC%95%E8%AE%BA.md)
+  - [优先队列(堆)](%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%2F%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97(%E5%A0%86).md)
+- 数据库
+  - Oracle
+    - [表分区](%E6%95%B0%E6%8D%AE%E5%BA%93%2FOracle%2F%E8%A1%A8%E5%88%86%E5%8C%BA.md)
+    - [Oracle初步使用](%E6%95%B0%E6%8D%AE%E5%BA%93%2FOracle%2FOracle%E5%88%9D%E6%AD%A5%E4%BD%BF%E7%94%A8.md)
+    - [Oracle初坑](%E6%95%B0%E6%8D%AE%E5%BA%93%2FOracle%2FOracle%E5%88%9D%E5%9D%91.md)
+  - Power Designer
+    - [逆向工程失败](%E6%95%B0%E6%8D%AE%E5%BA%93%2FPower%20Designer%2F%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E5%A4%B1%E8%B4%A5.md)
+  - Redis
+    - [编译安装redis](%E6%95%B0%E6%8D%AE%E5%BA%93%2FRedis%2F%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85redis.md)
+    - [主从哨兵集群搭建](%E6%95%B0%E6%8D%AE%E5%BA%93%2FRedis%2F%E4%B8%BB%E4%BB%8E%E5%93%A8%E5%85%B5%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
+  - SQL
+    - [视图操作](%E6%95%B0%E6%8D%AE%E5%BA%93%2FSQL%2F%E8%A7%86%E5%9B%BE%E6%93%8D%E4%BD%9C.md)
+- 数学
+  - 高数
+    - [1.数列极限](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F1.%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90.md)
+    - [2.函数的极限](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F2.%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90.md)
+    - [3.导数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F3.%E5%AF%BC%E6%95%B0.md)
+    - [3.等价无穷小证明](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F3.%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E8%AF%81%E6%98%8E.md)
+    - [4.高阶导数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F4.%E9%AB%98%E9%98%B6%E5%AF%BC%E6%95%B0.md)
+  - 高数基础
+    - [1.集合](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F1.%E9%9B%86%E5%90%88.md)
+    - [2.函数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F2.%E5%87%BD%E6%95%B0.md)
+    - [3.函数概念](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F3.%E5%87%BD%E6%95%B0%E6%A6%82%E5%BF%B5.md)
+    - [4.函数运算](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F4.%E5%87%BD%E6%95%B0%E8%BF%90%E7%AE%97.md)
+    - [5.不等式运算](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F5.%E4%B8%8D%E7%AD%89%E5%BC%8F%E8%BF%90%E7%AE%97.md)
+    - [6.反函数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F6.%E5%8F%8D%E5%87%BD%E6%95%B0.md)
+    - [7.反函数运算](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F7.%E5%8F%8D%E5%87%BD%E6%95%B0%E8%BF%90%E7%AE%97.md)
+    - [8.分段函数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F8.%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0.md)
+    - [9.初等函数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F9.%E5%88%9D%E7%AD%89%E5%87%BD%E6%95%B0.md)
+    - [10.常用经济函数](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F10.%E5%B8%B8%E7%94%A8%E7%BB%8F%E6%B5%8E%E5%87%BD%E6%95%B0.md)
+    - [11.极坐标](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F11.%E6%9E%81%E5%9D%90%E6%A0%87.md)
+    - [12.数集的扩张](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F12.%E6%95%B0%E9%9B%86%E7%9A%84%E6%89%A9%E5%BC%A0.md)
+    - [13.排列组合概率](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F13.%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88%E6%A6%82%E7%8E%87.md)
+    - [14.行列式](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F14.%E8%A1%8C%E5%88%97%E5%BC%8F.md)
+  - 数学建模
+    - [1.数学建模](%E6%95%B0%E5%AD%A6%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F1.%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.md)
+- 桌面应用
+  - [脚手架搭建(挖坑,未填)](%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%2F%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BA(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
+  - Electron
+    - [Electron搭建](%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%2FElectron%2FElectron%E6%90%AD%E5%BB%BA.md)
+- English
+  - [前缀单词](English%2F%E5%89%8D%E7%BC%80%E5%8D%95%E8%AF%8D.md)
+  - [试卷中不认识的单词](English%2F%E8%AF%95%E5%8D%B7%E4%B8%AD%E4%B8%8D%E8%AE%A4%E8%AF%86%E7%9A%84%E5%8D%95%E8%AF%8D.md)
+  - article
+    - [Youth find new hobby](English%2Farticle%2FYouth%20find%20new%20hobby.md)
+  - [word](English%2Fword.md)
+- gitlab
+  - [gitlab forbidden](gitlab%2Fgitlab%20forbidden.md)
+- java
+  - 事务
+    - [事务的原理(未完待续)](java%2F%E4%BA%8B%E5%8A%A1%2F%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%8E%9F%E7%90%86(%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD).md)
+  - 随手记
+    - [8特性使用小节](java%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F8%E7%89%B9%E6%80%A7%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%8A%82.md)
+    - [遍历](java%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E9%81%8D%E5%8E%86.md)
+    - [对象锁小记](java%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E5%AF%B9%E8%B1%A1%E9%94%81%E5%B0%8F%E8%AE%B0.md)
+    - [mybatis xml模块的分离](java%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2Fmybatis%20xml%E6%A8%A1%E5%9D%97%E7%9A%84%E5%88%86%E7%A6%BB.md)
+  - 组件工具
+    - [swagger3.0.0](java%2F%E7%BB%84%E4%BB%B6%E5%B7%A5%E5%85%B7%2Fswagger3.0.0.md)
+  - flyway
+    - [springboot整合flyway管理数据表版本](java%2Fflyway%2Fspringboot%E6%95%B4%E5%90%88flyway%E7%AE%A1%E7%90%86%E6%95%B0%E6%8D%AE%E8%A1%A8%E7%89%88%E6%9C%AC.md)
+  - gradle
+    - [gradle](java%2Fgradle%2Fgradle.md)
+  - Java 基础
+    - [Java泛型](java%2FJava%20%E5%9F%BA%E7%A1%80%2FJava%E6%B3%9B%E5%9E%8B.md)
+    - [Java基础](java%2FJava%20%E5%9F%BA%E7%A1%80%2FJava%E5%9F%BA%E7%A1%80.md)
+    - [Java集合](java%2FJava%20%E5%9F%BA%E7%A1%80%2FJava%E9%9B%86%E5%90%88.md)
+  - JVM
+    - [技术体系](java%2FJVM%2F%E6%8A%80%E6%9C%AF%E4%BD%93%E7%B3%BB.md)
+    - [实用操作](java%2FJVM%2F%E5%AE%9E%E7%94%A8%E6%93%8D%E4%BD%9C.md)
+    - [自动内存管理](java%2FJVM%2F%E8%87%AA%E5%8A%A8%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86.md)
+    - [JVM参数设置](java%2FJVM%2FJVM%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.md)
+  - maven
+    - [maven-compiler-plugin](java%2Fmaven%2Fmaven-compiler-plugin.md)
+  - RedisTemplate 解析
+    - [自定义序列器](java%2FRedisTemplate%20%E8%A7%A3%E6%9E%90%2F%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BA%8F%E5%88%97%E5%99%A8.md)
+    - [RedisTemplate](java%2FRedisTemplate%20%E8%A7%A3%E6%9E%90%2FRedisTemplate.md)
+  - spring boot
+    - [创建动态代理对象工厂，并将动态bean注入到spring中](java%2Fspring%20boot%2F%E5%88%9B%E5%BB%BA%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E5%AF%B9%E8%B1%A1%E5%B7%A5%E5%8E%82%EF%BC%8C%E5%B9%B6%E5%B0%86%E5%8A%A8%E6%80%81bean%E6%B3%A8%E5%85%A5%E5%88%B0spring%E4%B8%AD.md)
+    - [spring.framework数据连接池连接过程](java%2Fspring%20boot%2Fspring.framework%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5%E6%B1%A0%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%A8%8B.md)
+  - spring data JPA
+    - [JPA](java%2Fspring%20data%20JPA%2FJPA.md)
+  - spring security
+    - [security使用](java%2Fspring%20security%2Fsecurity%E4%BD%BF%E7%94%A8.md)
+- linux
+  - [基础命令](linux%2F%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4.md)
+  - [日常维护命令](linux%2F%E6%97%A5%E5%B8%B8%E7%BB%B4%E6%8A%A4%E5%91%BD%E4%BB%A4.md)
+  - [手贱涨知识](linux%2F%E6%89%8B%E8%B4%B1%E6%B6%A8%E7%9F%A5%E8%AF%86.md)
+  - [nfs搭建及hdfs引用nfs当作扩容盘Append引发的错误](linux%2Fnfs%E6%90%AD%E5%BB%BA%E5%8F%8Ahdfs%E5%BC%95%E7%94%A8nfs%E5%BD%93%E4%BD%9C%E6%89%A9%E5%AE%B9%E7%9B%98Append%E5%BC%95%E5%8F%91%E7%9A%84%E9%94%99%E8%AF%AF.md)
+- NetWork
+  - [NetWork](NetWork%2FNetWork.md)
+- python
+  - [安装 python3](python%2F%E5%AE%89%E8%A3%85%20python3.md)
+  - [常用基础内置模块](python%2F%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97.md)
+  - [语法基础](python%2F%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
