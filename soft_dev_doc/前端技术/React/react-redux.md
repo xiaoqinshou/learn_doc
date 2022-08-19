@@ -11,7 +11,7 @@ $ yarn add react-redux
 
 ### React-Redux connect原理
 * 大佬写的代码，就是简单易懂。说白了就是读取全局的store 然后进行筛选，组合到装饰后的 React 组件当中
-```js
+```jsx
 // connect() is a function that injects Redux-related props into your component.
 // You can inject data and callbacks that change that data by dispatching actions.
 function connect(mapStateToProps, mapDispatchToProps) {

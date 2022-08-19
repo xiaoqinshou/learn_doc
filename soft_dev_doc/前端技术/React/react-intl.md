@@ -21,7 +21,7 @@ addLocaleData(zhLocaleData)
 ```
 
 1. 然后在需要用到国际化的最外层新增 `<IntlProvider>` 组件包裹起来。一般整个项目都有需要用到国际化，所以一般都是放在项目结构中的最外层，包含整个软件项目。例如
-```typescript
+```tsx
 //app.js
 import { AppContainer } from 'react-hot-loader'
 import Main from './components/Main'
@@ -56,7 +56,7 @@ export default zh_CN;
 ```
 3. 然后引入这两个文件。
 4. 全局配置当前的语言，和相对应的文本。即配置`<IntlProvider>`组件的两个属性locale和messages。例如：
-```JS
+```tsx
 render(){
     let messages = {}
     messages['en'] = en_US;
@@ -71,7 +71,7 @@ render(){
 5. 接下来，添加翻译的文本到页面中。
 基本只需要使用到一个组件：<FormattedMessage>。这个组件默认生成一个<span>，内容是翻译后的文本，也就是 messages中对应字段的值。
 在需要添加国际化文本的组件中，引入FormattedMessage组件。
-```js
+```tsx
 import { FormattedMessage  } from 'react-intl'; /* react-intl imports */
 //... ...
 <FormattedMessage id="hello" />
@@ -92,18 +92,18 @@ const zh_CN = {
     helloSomeone: "{name}，你好！"
 }
 ```
-```js
+```jsx
 <FormattedMessage id="helloSomeone" values={{name:"Evelyn"}}/>
 ```
 
 #### 自定义标签名
 不生成<span>。比如生成 <p>。
-```js
+```jsx
 <FormattedMessage id="hello" tagName="p" />
 ```
 #### 生成的文本中包含富文本
 在messages中直接包含富文本无效，不会被解析。可以通过values传值时，加上富文本，比如：
-```js
+```jsx
 <FormattedMessage
   id="helloSomeone"
   tagName="div"
@@ -112,12 +112,12 @@ const zh_CN = {
   }} />
 ```
 注意此处name不是字符串，而是 React 元素。结果为：
-```js
+```html
 <div>Hello, <p class="name">Evelyn</p>!</div>
 ```
 #### 自定义生成的节点
 比如，生成一个按钮：
-```js
+```jsx
 <FormattedMessage id='hello'>
     {(txt) => (
       <input type="button"
@@ -128,7 +128,7 @@ const zh_CN = {
 </FormattedMessage>
 ```
 `txt`对应`messages`中的文本。当语言为en时生成结果：
-```js
+```html
 <input type="button" class="btn-hello" value="Hello!">
 ```
 此时再定义`tagName`属性是无效的。

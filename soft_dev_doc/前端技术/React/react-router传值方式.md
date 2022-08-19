@@ -4,7 +4,7 @@
 > 官方例子使用React router定义路由时，我们可以给<Route>指定一个path，然后指定通配符可以携带参数到指定的path：
 
 * 首先定义路由到UserPage页面:
-```ts
+```tsx
 import { Router,Route,hashHistory} from 'react-router';
 class App extends React.Component {
   render() {
@@ -33,7 +33,7 @@ import {Link,hashHistory} from 'react-router';
 hashHistory.push("/user/sam");
 ```
 当页面跳转到UserPage页面之后，取出传过来的值：
-```ts
+```tsx
 export default class UserPage extends React.Component{
     constructor(props){
         super(props);
@@ -50,7 +50,7 @@ export default class UserPage extends React.Component{
 <Route path='/user/:data' component={UserPage}></Route>
 ```
 使用：
-```ts
+```tsx
 var data = {id:3,name:sam,age:36};
 data = JSON.stringify(data);
 var path = `/user/${data}`;
@@ -73,7 +73,7 @@ var {id,name,age} = data;
 <Route path='/user' component={UserPage}></Route>
 ```
 使用：
-```ts
+```tsx
 var data = {id:3,name:sam,age:36};
 var path = {
   pathname:'/user',
@@ -99,7 +99,7 @@ state方式类似于post方式，使用方式和query类似，
 <Route path='/user' component={UserPage}></Route>
 ```
 使用：
-```ts
+```tsx
 var data = {id:3,name:sam,age:36};
 var path = {
   pathname:'/user',
