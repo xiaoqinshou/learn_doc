@@ -40,7 +40,7 @@ http://example.com/#/some/path
 HashRouter 则不存在这个问题，因为 hash 部分的内容会被服务器自动忽略，真正有效的信息是 hash 前端的部分，而对于单页应用来说，这部分是固定的。
 
 Router 会创建一个 history 对象，history 用来跟踪 URL, 当URL 发生变化时， Router,的后代组件会重新渲染。React Router 中提供的其他组件可以通过 context 获取 history 对象，这也隐含说明了 React Router 中其他组件必须作为 Router 组件后代使用。但 Router 中只能唯一的一个子元素，例如：
-```ts
+```tsx
 // 正确
 ReactDOM.render(
   (
@@ -80,13 +80,13 @@ Route 是 React Router中用于配置路由信息的组件，也是 React Router
 #### 3. Route 渲染组件的方式
 1.component
 component 的值是一个组件，当 URL 和 Route 匹配时，Component属性定义的组件就会被渲染。例如：
-```ts
+```tsx
 <Route path='/foo' component={Foo} >
 ```
 当 URL = "http://example.com/foo" 时，Foo组件会被渲染。
 2. render
 render 的值是一个函数，这个函数返回一个 React 元素。这种方式方便地为待渲染的组件传递额外的属性。例如：
-```ts
+```tsx
 <Route path='/foo' render={(props) => {
   <Foo {...props} data={extraProps} />
 }}>
@@ -96,7 +96,7 @@ Foo 组件接收了一个额外的 data 属性。
 
 3. children
 children 的值也是一个函数，函数返回要渲染的 React 元素。 与前两种方式不同之处是，无论是否匹配成功， children 返回的组件都会被渲染。但是，当匹配不成功时，match 属性为 null。例如:
-```
+```tsx
 <Route path='/foo' render={(props) => {
   <div className={props.match ? 'active': ''}>
     <Foo {...props} data={extraProps} />
@@ -108,7 +108,7 @@ children 的值也是一个函数，函数返回要渲染的 React 元素。 与
 
 4. Switch 和 exact
 当URL 和多个 Route 匹配时，这些 Route 都会执行渲染操作。如果只想让第一个匹配的 Route 沉浸，那么可以把这些 Route 包到一个 Switch 组件中。如果想让 URL 和 Route 完全匹配时，Route才渲染，那么可以使用 Route 的 exact 属性。Switch 和 exact 常常联合使用，用于应用首页的导航。例如：
-```ts
+```tsx
 <Router>
  <Switch>
     <Route exact path='/' component={Home}/>
@@ -121,7 +121,7 @@ children 的值也是一个函数，函数返回要渲染的 React 元素。 与
 
 5. 嵌套路由
 嵌套路由是指在Route 渲染的组件内部定义新的 Route。例如，在上一个例子中，在 Posts 组件内再定义两个 Route:
-```ts
+```tsx
 const Posts = ({match}) => {
   return (
     <div>
@@ -135,7 +135,7 @@ const Posts = ({match}) => {
 
 ### 链接
 Link 是 React Router提供的链接组件，一个 Link 组件定义了当点击该 Link 时，页面应该如何路由。例如：
-```ts
+```tsx
 const Navigation = () => {
   <header>
     <nav>
@@ -148,7 +148,7 @@ const Navigation = () => {
 }
 ```
 Link 使用 to 属性声明要导航到的URL地址。to 可以是 string 或 object 类型，当 to 为 object 类型时，可以包含 pathname、search、hash、state 四个属性，例如:
-```ts
+```tsx
 <Link to={{
   pathname: '/posts',
   search: '?sort=name',
@@ -178,7 +178,7 @@ history.replace('/posts');
 2. 组织 Route 结构层次
 React Router 4并不需要在一个地方集中声明应用需要的所有 Route, Route实际上也是一个普通的 React 组件，可以在任意地方使用它（前提是，Route必须是 Router 的子节点）。当然，这样的灵活性也一定程度上增加了组织 Route 结构层次的难度。
 我们先考虑第一层级的路由。登录页和帖子列表页(首页)应该属于第一层级：
-```ts
+```tsx
 <Router>
   <Switch>
     <Route exact path="/" component={Home}></Route>
@@ -189,7 +189,7 @@ React Router 4并不需要在一个地方集中声明应用需要的所有 Route
 ```
 第一个Route 使用了 exact 属性，保证只有当访问根路径时，第一个 Route 才会匹配成功。Home 是首页对应组件，可以通过 "/posts" 和 “/” 两个路径访问首页。注意，这里并没有直接渲染帖子列表组件，真正渲染帖子列表组件的地方在 Home 组件内，通过第二层级的路由处理帖子列表组件和帖子详情组件渲染，components/Home.js 的主要代码如下：
 
-```ts
+```tsx
 class Home extends Component {
   /**省略其余代码 */
   render() {
@@ -222,7 +222,7 @@ Home的render内定义了两个 Route,分别用于渲染帖子列表和帖子详
 当项目代码量不多时，把所有代码打包到一个文件的做法并不会有什么影响。但是，对于一个大型应用，如果还把所有的代码都打包到一个文件中，显然就不合适了。
 
 create-react-app 支持通过动态 import() 的方式实现代码分片。import()接收一个模块的路径作为参数，然后返回一个 Promise 对象， Promise 对象的值就是待导入的模块对象。例如
-```ts
+```tsx
 // moduleA.js
 
 const moduleA = 'Hello'
@@ -256,7 +256,7 @@ export default App;
 ```
 上面代码会将 moduleA.js 和它所有依赖的其他模块单独打包到一个chunk文件中，只有当用户点击加载按钮，才开始加载这个 chunk 文件。
 当项目中使用 React Router 是，一般会根据路由信息将项目代码分片，每个路由依赖的代码单独打包成一个chunk文件。我们创建一个函数统一处理这个逻辑：
-```ts
+```tsx
 import React, { Component } from 'react';
 // importComponent 是使用 import()的函数
 export default function asyncComponent(importComponent) {
@@ -287,7 +287,7 @@ export default function asyncComponent(importComponent) {
 ```
 asyncComponent接收一个函数参数 importComponent, importComponent 内通过import()语法动态导入模块。在AsyncComponent被挂载后，importComponent就会阴调用，进而触发动态导入模块的动作。
 下面利用 asyncComponent 对上面的例子进行改造，代码如下:
-```ts
+```tsx
 import React, { Component } from 'react';
 import { ReactDOM, BrowserRouter as Router, Switch, Route } from 'react-dom';
 import asyncComponent from './asyncComponent'
