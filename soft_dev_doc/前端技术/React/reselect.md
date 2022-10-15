@@ -7,7 +7,7 @@
 ### 为什么要用到 reselect
 #### 遇到的问题
 先看下下面的一个组件：
-```ts
+```tsx
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
@@ -122,7 +122,7 @@ class UnusedComp extends Component {
 }
 ```
 或者这样的：
-```
+```js
 class UnusedComp extends Component {
     componentWillReciveProps(nextProps) {
         const { a, b, c } = this.props
@@ -154,7 +154,7 @@ class UnusedComp extends Component {
 而且这两种都违背了 我们的基本原则： **保持组件逻辑简单**
 
 让数据逻辑离开组件！
-```ts
+```tsx
 // 可以写成函数式组件
 class UnusedComp extends Component {
     render() {
@@ -303,7 +303,7 @@ npm install reselect
 
 这里是一个`App`组件,渲染出三个`VisibleTodoList`组件,每一个组件有`ListId`属性.
 `components/App.js`
-```ts
+```tsx
 import React from 'react'
 import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'

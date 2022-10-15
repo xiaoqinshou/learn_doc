@@ -42,6 +42,37 @@ armv8是64位操作系统
     3. CecOS CaaS 容器云管理平台 登录界面
     登录地址 https://你树莓派的IP地址:8443
     说明：默认管理账户 admin , 默认密码：password 。请登录后立即修改默认密码！！
+
+* 定制服务命令： 
+    * Docker容器
+    ```
+    手动开启：systemctl start docker.service
+    手动停止：systemctl stop docker.service
+    启用开机启动：systemctl enable docker.service
+    禁用开机启动：systemctl disable docker.service
+    ```
+    * CecOS CaaS容器云（服务端口：8443）
+    ```
+    手动开启：systemctl start cecos-caas.service
+    手动停止：systemctl stop cecos-caas.service
+    启用开机启动：systemctl enable cecos-caas.service
+    禁用开机启动：systemctl disable cecos-caas.service
+    ```
+    * WebGUI管理平台（服务端口：9090）
+    ```
+    手动开启：systemctl start cockpit.socket
+    手动停止：systemctl stop cockpit.socket
+    启用开机启动：systemctl enable cockpit.socket
+    禁用开机启动：systemctl disable cockpit.socket
+    ```
+    * Web SSH客户端（服务端口：4200）
+    ```
+    手动开启：systemctl start shellinabox.service
+    手动停止：systemctl stop shellinabox.service
+    启用开机启动：systemctl enable shellinabox.service
+    禁用开机启动：systemctl disable shellinabox.service
+    ```
+    
 ### Chromium浏览器界面显示错误
 * 问题根源：
 > 您可能会在 版本20200615 U3 上看到此问题，因为我们更改了mesalib，应该使用另一种方式设置Chromium。
