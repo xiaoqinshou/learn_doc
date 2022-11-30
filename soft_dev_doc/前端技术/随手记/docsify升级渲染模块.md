@@ -104,7 +104,151 @@ renderer对象在Renderer.js中。
 
 #### 分析总结
 * 根据博主的上面的思路，简化了不少看源码的时间
-// todo 把新增的语法解析放到此处
+1. rules.js 文件添加 katex 需要识别的语法糖
+```js
+/**
+ * Block-Level Grammar
+ */
+export const block = {
+// anything ....
+// 表明匹配 $ $ 块或者是$$ $$ 块的内容
+katex: /^(\$[^$]+\$)|^(\$\$[^$]+\$\$)/
+// anything ....
+}
+
+/**
+ * Inline-Level Grammar
+ */
+export const inline = {
+  // anything
+  // 修改行内文本块的内容, 使其遇到$符, 重新去生成一个行内的内联块
+  text: /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_$]|\b_|$)|[^ ](?= {2,}\n)))/,
+  // anything
+}
+```
+
+2. 修改 Tokenizer.js 用正则表达式将符合类型的字符串转化为对象 Token 类型
+```js
+// 核心解析器
+export class Tokenizer {
+  constructor(options) {
+    this.options = options || defaults;
+  }
+ // something code
+  // 此处新增 katex 解析, 并将内容组装成 内部的Token对象
+  katex(src) {
+    const cap = this.rules.block.katex.exec(src);
+    if (cap) {
+      const text = cap[0].replace(/\$/g, '');
+      return {
+        type: 'katex',
+        raw: cap[0],
+        text
+      };
+    }
+  }
+ // something code
+}
+```
+
+3. Lexer.js 新增解析功能
+```js
+/**
+ * Block Lexer
+ */
+// 块级代码匹配核心类
+export class Lexer {
+  // ...
+  /**
+   * Lexing
+   */
+  blockTokens(src, tokens = []) {
+    // katex
+    // 加入katex块级别规则
+      if (token = this.tokenizer.katex(src)) {
+        src = src.substring(token.raw.length);
+        tokens.push(token);
+        continue;
+      }
+  }
+  // ...
+
+  /**
+   * Lexing/Compiling
+   */
+  // 行内的tokens匹配校验
+  inlineTokens(src, tokens = []) {
+    // katex
+      if (token = this.tokenizer.katex(src)) {
+        src = src.substring(token.raw.length);
+        tokens.push(token);
+        continue;
+      }
+  }
+  // ...
+}
+```
+
+4. Parser.js 修改, 新增katex的格式化方法
+```js
+/**
+ * Parsing & Compiling
+ */
+export class Parser {
+  // ...
+  /**
+   * Parse Loop
+   */
+  parse(tokens, top = true) {
+    switch (token.type) {
+      // 新增 katex 的 parser 方法
+      case 'katex': {
+        out += this.renderer.katex(token.text);
+        if (i + 1 < l && token.raw.endsWith("\n")){
+          out += this.renderer.br(); 
+        }
+        break;
+      }
+    }
+  }
+  //...
+
+  /**
+   * Parse Inline Tokens
+   */
+  // 同样也是 行内解析 katex 
+  parseInline(tokens, renderer) {
+    switch (token.type) {
+      // 此处新增行内多个简短katex代码块的解析规则
+      case 'katex': {
+          // not found function in textRender, so we need to check it exist before calling it
+          out += renderer.katex? renderer.katex(token.text) : this.renderer.katex(token.text);
+          break;
+        }
+    }
+  }
+  // ...
+}
+```
+
+5. Renderer.js 新增 katex 渲染代码
+```js
+/**
+ * Renderer
+ */
+export class Renderer {
+  // ...
+  // 直接返回字符串, 相当于只做了个 token的解析, 渲染交由上层渲染
+  // 虽然此处也能做渲染成具体的 Svg dom 但是没必要, marked 本就是只做markdown语法的解析工具 
+  katex(text) {
+    return text;
+  }
+  // ...
+}
+```
+
+6. 到此步就完成了自定义语法的扩展, 并且扩展出了一个 katex 新的tokens类 其他模块下可以调用该类型获取其中内容进行渲染解析
+
 
 #### 渲染 katex
 * 扩展完了marked编辑器，引入扩展后的marked包， 让它能识别 katex 语法标记块后就是调用docsify新增渲染逻辑了
