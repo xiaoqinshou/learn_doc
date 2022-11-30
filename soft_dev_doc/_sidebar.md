@@ -17,6 +17,8 @@
   - [host配置](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhost%E9%85%8D%E7%BD%AE.md)
   - zookeeper
     - [zookeeper安装](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fzookeeper%2Fzookeeper%E5%AE%89%E8%A3%85.md)
+- 调研文档
+  - 有赞系统数据对接
 - 非自己写的文档
   - [kafka](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2Fkafka.md)
   - [MySQL](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2FMySQL.md)
@@ -55,6 +57,10 @@
     - [npm,yarn代理下载依赖](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2Fnpm%2Cyarn%E4%BB%A3%E7%90%86%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96.md)
   - 前端文档工程
     - [技术选型](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3%E5%B7%A5%E7%A8%8B%2F%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B.md)
+    - [docsify部署](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3%E5%B7%A5%E7%A8%8B%2Fdocsify%E9%83%A8%E7%BD%B2.md)
+    - [docsify部署公司版](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%89%8D%E7%AB%AF%E6%96%87%E6%A1%A3%E5%B7%A5%E7%A8%8B%2Fdocsify%E9%83%A8%E7%BD%B2%E5%85%AC%E5%8F%B8%E7%89%88.md)
+  - 数据可视化前端架构
+    - [基础结构](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%89%8D%E7%AB%AF%E6%9E%B6%E6%9E%84%2F%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84.md)
   - 随手记
     - [记一次html2canvas + RevealJS + jsPDF网页PPT转PDF的问题](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E8%AE%B0%E4%B8%80%E6%AC%A1html2canvas%20%2B%20RevealJS%20%2B%20jsPDF%E7%BD%91%E9%A1%B5PPT%E8%BD%ACPDF%E7%9A%84%E9%97%AE%E9%A2%98.md)
     - [记一次react-grid-layout的源码修改使用](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E9%9A%8F%E6%89%8B%E8%AE%B0%2F%E8%AE%B0%E4%B8%80%E6%AC%A1react-grid-layout%E7%9A%84%E6%BA%90%E7%A0%81%E4%BF%AE%E6%94%B9%E4%BD%BF%E7%94%A8.md)
@@ -223,3 +229,4 @@
   - [安装 python3](python%2F%E5%AE%89%E8%A3%85%20python3.md)
   - [常用基础内置模块](python%2F%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97.md)
   - [语法基础](python%2F%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
+  - [jupyter 安装](python%2Fjupyter%20%E5%AE%89%E8%A3%85.md)
