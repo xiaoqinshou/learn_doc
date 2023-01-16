@@ -17,8 +17,6 @@
   - [host配置](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fhost%E9%85%8D%E7%BD%AE.md)
   - zookeeper
     - [zookeeper安装](%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6%2Fzookeeper%2Fzookeeper%E5%AE%89%E8%A3%85.md)
-- 调研文档
-  - 有赞系统数据对接
 - 非自己写的文档
   - [kafka](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2Fkafka.md)
   - [MySQL](%E9%9D%9E%E8%87%AA%E5%B7%B1%E5%86%99%E7%9A%84%E6%96%87%E6%A1%A3%2FMySQL.md)
@@ -34,6 +32,8 @@
 - 面试题
   - [网络编程](%E9%9D%A2%E8%AF%95%E9%A2%98%2F%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
 - 其他笔记
+  - 抓包
+    - [wireshark给手机抓包](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2F%E6%8A%93%E5%8C%85%2Fwireshark%E7%BB%99%E6%89%8B%E6%9C%BA%E6%8A%93%E5%8C%85.md)
   - Trojan
     - [trojan科学上网](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2FTrojan%2Ftrojan%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.md)
   - v2ray
@@ -47,6 +47,8 @@
     - [camunda工作流使用](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%2Fcamunda%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BD%BF%E7%94%A8.md)
   - docker
     - [安装部署](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fdocker%2F%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2.md)
+    - [docker安装zookeeper](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fdocker%2Fdocker%E5%AE%89%E8%A3%85zookeeper.md)
+    - [dockerfile常用命令](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fdocker%2Fdockerfile%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
   - Jhipster
     - [new jhipster](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2FJhipster%2Fnew%20jhipster.md)
   - matebase
@@ -146,6 +148,11 @@
     - [主从哨兵集群搭建](%E6%95%B0%E6%8D%AE%E5%BA%93%2FRedis%2F%E4%B8%BB%E4%BB%8E%E5%93%A8%E5%85%B5%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
   - SQL
     - [视图操作](%E6%95%B0%E6%8D%AE%E5%BA%93%2FSQL%2F%E8%A7%86%E5%9B%BE%E6%93%8D%E4%BD%9C.md)
+- 数据中台搭建
+  - [创建Kubernetes集群](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F%E5%88%9B%E5%BB%BAKubernetes%E9%9B%86%E7%BE%A4.md)
+  - [集群外网代理搭建](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F%E9%9B%86%E7%BE%A4%E5%A4%96%E7%BD%91%E4%BB%A3%E7%90%86%E6%90%AD%E5%BB%BA.md)
+  - [centos安装docker](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2Fcentos%E5%AE%89%E8%A3%85docker.md)
+  - [docker常用命令](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2Fdocker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 - 数学
   - 高数
     - [1.数列极限](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%2F1.%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90.md)
@@ -170,6 +177,9 @@
     - [14.行列式](%E6%95%B0%E5%AD%A6%2F%E9%AB%98%E6%95%B0%E5%9F%BA%E7%A1%80%2F14.%E8%A1%8C%E5%88%97%E5%BC%8F.md)
   - 数学建模
     - [1.数学建模](%E6%95%B0%E5%AD%A6%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F1.%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.md)
+  - 线性代数
+    - [1.Introduction to Vectors](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F1.Introduction%20to%20Vectors.md)
+    - [概要](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F%E6%A6%82%E8%A6%81.md)
 - 桌面应用
   - [脚手架搭建(挖坑,未填)](%E6%A1%8C%E9%9D%A2%E5%BA%94%E7%94%A8%2F%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BA(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
   - Electron
