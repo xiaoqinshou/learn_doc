@@ -1,0 +1,27 @@
+iptables 文章
+https://cloud.tencent.com/developer/article/2110067?from=15425
+
+* 启动docker 中的所有容器命令
+```sh
+$ docker stop $(docker ps -a | awk '{ print $1}' | tail -n +2)
+```
+
+* docker中 关闭所有的容器命令
+```sh
+$ docker stop $(docker ps -a | awk '{ print $1}' | tail -n +2)
+```
+
+* docker中 删除所有的容器命令
+```sh
+$ docker rm $(docker ps -a | awk '{ print $1}' | tail -n +2)
+```
+
+* docker中 删除所有的镜像
+```sh
+$ docker rmi $(docker images | awk '{print $3}' |tail -n +2)
+```
+
+* docker中 删除所有已经停止的容器
+```sh
+$ docker rm $(docker container ls -f 'status=exited' -q)
+```
