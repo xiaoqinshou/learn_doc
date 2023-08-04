@@ -8,7 +8,7 @@ wget http://mirror.bit.edu.cn/apache/zookeeper/stable/zookeeper-3.4.13.tar.gz
 ```
 
 ### 准备JAVA环境
-(./Java%E5%AE%89%E8%A3%85.md)
+[java安装](../hadoop/Java%E5%AE%89%E8%A3%85.md)
 
 ### 安装
 1. 创建并解压，例如：
