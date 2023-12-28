@@ -1,4 +1,6 @@
-﻿import javax.imageio.ImageIO;
+
+
+import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -29,9 +31,11 @@ public class imageChange {
     public static void main(String args[]) {
         Long start = System.currentTimeMillis();
         imageChange image = new imageChange();
+        String workingDirectory = System.getProperty("user.dir");
+        System.out.println("Current working directory: " + workingDirectory);
         try {
             //处理第一张图片
-            File file = new File("C:\\Users\\Administrator\\Desktop\\asdasd_files\\codebig1.jpg");
+            File file = new File(workingDirectory+"/business.jpg");
             BufferedImage img = ImageIO.read(file);
 //            //加权去灰
 //            img = image.grayImage(img);
@@ -56,7 +60,7 @@ public class imageChange {
             QCCode oneimg = image.calculate(coor.get(0), coor.get(1), coor.get(2));
 
             //处理第二张图片
-            File erweima = new File("C:\\Users\\Administrator\\Desktop\\asdasd_files\\asd.jpg");
+            File erweima = new File(workingDirectory+"/collection.jpg");
             BufferedImage erwei = ImageIO.read(erweima);
             //最佳阀值二值
             erwei = image.binary(erwei);
@@ -93,7 +97,7 @@ public class imageChange {
 //            int[][] unitmap = image.zoom(newmap, twoimg);
 
             //生成图片
-            File newfile = new File("C:\\Users\\Administrator\\Desktop\\asdasd_files\\qwe.png");
+            File newfile = new File(workingDirectory+"/over.jpg");
             ImageIO.write(nerimg, "jpg", newfile);
         } catch (IOException e) {
             e.printStackTrace();
@@ -838,10 +842,10 @@ public class imageChange {
                 i++;
             }
         }
-        //以X坐标*100+id的值进行比较X坐标
+        //以X坐标*1000+id的值进行比较X坐标
         i = 0;
         for (XYWH cpp : list) {
-            sort[i] = cpp.getX() * 100 + cpp.getId();
+            sort[i] = cpp.getX() * 1000 + cpp.getId();
             i++;
         }
         //排序
@@ -852,7 +856,7 @@ public class imageChange {
             if (sort[k] != 0) {
                 XYWH ckk = null;
                 for (XYWH cxx : list) {
-                    if (cxx.getId() == sort[k] % 100) {
+                    if (cxx.getId() == sort[k] % 1000) {
                         ckk = cxx;
                         break;
                     }
@@ -860,15 +864,16 @@ public class imageChange {
                 for (int j = 1; j < c / 2; j++) {
                     XYWH cvv = null;
                     for (XYWH cxx : list) {
-                        if (cxx.getId() == sort[k + j] % 100) {
+                        if (cxx.getId() == sort[k + j] % 1000) {
                             cvv = cxx;
                             break;
                         }
                     }
-                    if (sort[k] / 100 == sort[k + j] / 100 && (Math.abs(ckk.getY() - cvv.getY()) > ckk.getW() || Math.abs(ckk.getY() - cvv.getY()) > ckk.getH())
+                    // sort[k] / 1000 == sort[k + j] / 1000
+                    if ((ckk.getX()+3 >= cvv.getX() && ckk.getX()-3 <= cvv.getX()) && (Math.abs(ckk.getY() - cvv.getY()) > ckk.getW() || Math.abs(ckk.getY() - cvv.getY()) > ckk.getH())
                             && (ckk.getW() + 3 >= cvv.getW() && ckk.getW() <= 3 + cvv.getW())) {
-                        id[0] = sort[k] % 100;
-                        id[1] = sort[k + j] % 100;
+                        id[0] = sort[k] % 1000;
+                        id[1] = sort[k + j] % 1000;
                         break zzz;
                     }
                 }
@@ -895,7 +900,8 @@ public class imageChange {
         }
         XYWH three = null;
         for (XYWH cqq : list) {
-            if (cqq.getY() == one.getY() && cqq.getX() != one.getX()) {
+            if ((cqq.getY()+3 >= one.getY() && cqq.getY()-3 <= one.getY()) && (Math.abs(cqq.getX() - one.getX()) > cqq.getW() || Math.abs(cqq.getY() - one.getY()) > cqq.getH())
+                && (cqq.getW() + 3 >= one.getW() && cqq.getW() <= 3 + one.getW())) {
                 id[2] = cqq.getId();
                 three = cqq;
                 break;
