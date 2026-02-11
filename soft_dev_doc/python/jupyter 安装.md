@@ -158,6 +158,57 @@ Available kernels:
 % jupyter lab
 ```
 
+#### 带Tkinter环境
+```sh
+# 1. 安装 tcl-tk
+brew install tcl-tk 
+# 2. 查看安装路径
+brew info tcl-tk
+==> tcl-tk: stable 9.0.1 (bottled)
+Tool Command Language
+https://www.tcl-lang.org
+Conflicts with:
+  page (because both install `page` binaries)
+  the_platinum_searcher (because both install `pt` binaries)
+Installed
+/opt/homebrew/Cellar/tcl-tk/9.0.1 (3,150 files, 38MB) *
+  Poured from bottle using the formulae.brew.sh API on 2025-02-05 at 18:30:05
+From: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/t/tcl-tk.rb
+License: TCL
+==> Dependencies
+Required: libtommath ✔, openssl@3 ✔
+==> Caveats
+The sqlite3_analyzer binary is in the `sqlite-analyzer` formula.
+==> Analytics
+install: 31,789 (30 days), 121,959 (90 days), 430,605 (365 days)
+install-on-request: 18,097 (30 days), 70,628 (90 days), 186,581 (365 days)
+build-error: 35 (30 days)
+
+# 安装新的python 环境并链接tk
+
+PYTHON_CONFIGURE_OPTS="--with-tcltk-includes=$(brew --prefix tcl-tk)/include --with-tcltk-libs=$(brew --prefix tcl-tk)/lib" \
+pyenv install 3.13.1  # 你可以替换成想用的 Python 版本
+
+pyenv versions
+  system
+  3.10.13
+* 3.12.1 (set by /Users/lance/.pyenv/version)
+  3.13.1
+  anaconda3-2023.09-0
+
+# 进入安装的新版本
+cd /Users/lance/.pyenv/versions/3.13.1/bin
+
+# 使用对应环境的pip3进行下载 ipykernel
+% ./pip3 install ipykernel
+
+# 再将基础环境列表加入到jupyterlab中
+# 安装到对应环境的自己下面
+% ./python3 -m ipykernel install --name=python-tk --user --display-name "tk环境"
+# 安装成功
+% jupyter kernelspec list
+```
+
 ### pyenv 常用指令
 * 借鉴[知乎-青灯抽丝](https://zhuanlan.zhihu.com/p/664786383)
 ```sh
