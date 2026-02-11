@@ -29,6 +29,7 @@
 - 金融学
   - 证券投资
     - [证券市场导论](%E9%87%91%E8%9E%8D%E5%AD%A6%2F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%2F%E8%AF%81%E5%88%B8%E5%B8%82%E5%9C%BA%E5%AF%BC%E8%AE%BA.md)
+    - [A股网格](%E9%87%91%E8%9E%8D%E5%AD%A6%2F%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%2FA%E8%82%A1%E7%BD%91%E6%A0%BC.md)
 - 面试题
   - [网络编程](%E9%9D%A2%E8%AF%95%E9%A2%98%2F%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
 - 其他笔记
@@ -40,11 +41,14 @@
   - Trojan
     - [trojan科学上网](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2FTrojan%2Ftrojan%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91.md)
   - v2ray
+    - [饼子对冲](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2Fv2ray%2F%E9%A5%BC%E5%AD%90%E5%AF%B9%E5%86%B2.md)
     - [vps搭建](%E5%85%B6%E4%BB%96%E7%AC%94%E8%AE%B0%2Fv2ray%2Fvps%E6%90%AD%E5%BB%BA.md)
 - 其他后端框架或技术
   - 队列
     - kafka
       - [常用命令](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E9%98%9F%E5%88%97%2Fkafka%2F%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
+  - 服务器
+    - [centos初始化](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E6%9C%8D%E5%8A%A1%E5%99%A8%2Fcentos%E5%88%9D%E5%A7%8B%E5%8C%96.md)
   - 工作流
     - [工作流引擎对比](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%BC%95%E6%93%8E%E5%AF%B9%E6%AF%94.md)
     - [camunda工作流使用](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E4%BD%9C%E6%B5%81%2Fcamunda%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%BD%BF%E7%94%A8.md)
@@ -65,7 +69,7 @@
     - [metabase初使用及开发环境运行](%E5%85%B6%E4%BB%96%E5%90%8E%E7%AB%AF%E6%A1%86%E6%9E%B6%E6%88%96%E6%8A%80%E6%9C%AF%2Fmatebase%2Fmetabase%E5%88%9D%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E8%BF%90%E8%A1%8C.md)
 - 前端技术
   - 工程化
-    - [多模块工程初始化](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2F%E5%A4%9A%E6%A8%A1%E5%9D%97%E5%B7%A5%E7%A8%8B%E5%88%9D%E5%A7%8B%E5%8C%96.md)
+    - [多模块工程构建](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2F%E5%A4%9A%E6%A8%A1%E5%9D%97%E5%B7%A5%E7%A8%8B%E6%9E%84%E5%BB%BA.md)
     - [工程化常用插件(挖坑,未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
     - [npm,yarn代理下载依赖](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2F%E5%B7%A5%E7%A8%8B%E5%8C%96%2Fnpm%2Cyarn%E4%BB%A3%E7%90%86%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96.md)
   - 基础组件
@@ -97,6 +101,7 @@
     - [css单位](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fcss%2Fcss%E5%8D%95%E4%BD%8D.md)
     - [css单位(坑未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fcss%2Fcss%E5%8D%95%E4%BD%8D(%E5%9D%91%E6%9C%AA%E5%A1%AB).md)
   - Davinci
+    - [datart简单改造](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FDavinci%2Fdatart%E7%AE%80%E5%8D%95%E6%94%B9%E9%80%A0.md)
     - [davinci整体源码剖析](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FDavinci%2Fdavinci%E6%95%B4%E4%BD%93%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90.md)
   - dva
     - [dva项目创建](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fdva%2Fdva%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA.md)
@@ -120,8 +125,12 @@
     - [react-router传值方式](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-router%E4%BC%A0%E5%80%BC%E6%96%B9%E5%BC%8F.md)
     - [react-saga(挖坑,未填)](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freact-saga(%E6%8C%96%E5%9D%91%2C%E6%9C%AA%E5%A1%AB).md)
     - [reselect](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact%2Freselect.md)
+  - React-Native
+    - [1.入门](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FReact-Native%2F1.%E5%85%A5%E9%97%A8.md)
   - typescript
     - [常用类型定义](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Ftypescript%2F%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89.md)
+  - vmox-cli
+    - [1.GetStart](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2Fvmox-cli%2F1.GetStart.md)
   - webWorker
     - [webWorker工具封装问题](%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%2FwebWorker%2FwebWorker%E5%B7%A5%E5%85%B7%E5%B0%81%E8%A3%85%E9%97%AE%E9%A2%98.md)
 - 日本語
@@ -143,6 +152,8 @@
   - [装饰者模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F.md)
   - [状态模式](%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%2F%E7%8A%B6%E6%80%81%E6%A8%A1%E5%BC%8F.md)
 - 树莓派
+  - [1.官方Debain系统初始化](%E6%A0%91%E8%8E%93%E6%B4%BE%2F1.%E5%AE%98%E6%96%B9Debain%E7%B3%BB%E7%BB%9F%E5%88%9D%E5%A7%8B%E5%8C%96.md)
+  - [2.搭建开发工具环境](%E6%A0%91%E8%8E%93%E6%B4%BE%2F2.%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%8E%AF%E5%A2%83.md)
   - [4b 安装centos](%E6%A0%91%E8%8E%93%E6%B4%BE%2F4b%20%E5%AE%89%E8%A3%85centos.md)
   - [扩展内存卡](%E6%A0%91%E8%8E%93%E6%B4%BE%2F%E6%89%A9%E5%B1%95%E5%86%85%E5%AD%98%E5%8D%A1.md)
   - [docker trojan client](%E6%A0%91%E8%8E%93%E6%B4%BE%2Fdocker%20trojan%20client.md)
@@ -183,6 +194,12 @@
   - [13.flink集群搭建](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F13.flink%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA.md)
   - [14.域名与Ingress](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F14.%E5%9F%9F%E5%90%8D%E4%B8%8EIngress.md)
   - [15.Netty实时数据探针](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F15.Netty%E5%AE%9E%E6%97%B6%E6%95%B0%E6%8D%AE%E6%8E%A2%E9%92%88.md)
+  - [16.minIO搭建](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F16.minIO%E6%90%AD%E5%BB%BA.md)
+  - [17.gitlab搭建](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F17.gitlab%E6%90%AD%E5%BB%BA.md)
+  - [18.kubernetes扩容](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F18.kubernetes%E6%89%A9%E5%AE%B9.md)
+  - [19.k8s资源释放](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F19.k8s%E8%B5%84%E6%BA%90%E9%87%8A%E6%94%BE.md)
+  - [20.集群SSL证书管理](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F20.%E9%9B%86%E7%BE%A4SSL%E8%AF%81%E4%B9%A6%E7%AE%A1%E7%90%86.md)
+  - [93.pod停止异常问题](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F93.pod%E5%81%9C%E6%AD%A2%E5%BC%82%E5%B8%B8%E9%97%AE%E9%A2%98.md)
   - [94.集群主机无外网容器访问外网解决方案](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F94.%E9%9B%86%E7%BE%A4%E4%B8%BB%E6%9C%BA%E6%97%A0%E5%A4%96%E7%BD%91%E5%AE%B9%E5%99%A8%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.md)
   - [95.外网连接K8S内部kafka问题](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F95.%E5%A4%96%E7%BD%91%E8%BF%9E%E6%8E%A5K8S%E5%86%85%E9%83%A8kafka%E9%97%AE%E9%A2%98.md)
   - [96.dolphinscheduler-python包](%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%8F%B0%E6%90%AD%E5%BB%BA%2F96.dolphinscheduler-python%E5%8C%85.md)
@@ -215,8 +232,13 @@
     - [1.数学建模](%E6%95%B0%E5%AD%A6%2F%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%2F1.%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1.md)
   - 线性代数
     - [1.Introduction to Vectors](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F1.Introduction%20to%20Vectors.md)
+    - [2.Solving Linear Equations](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F2.Solving%20Linear%20Equations.md)
     - [二位直角坐标系原图](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F%E4%BA%8C%E4%BD%8D%E7%9B%B4%E8%A7%92%E5%9D%90%E6%A0%87%E7%B3%BB%E5%8E%9F%E5%9B%BE.md)
     - [概要](%E6%95%B0%E5%AD%A6%2F%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%2F%E6%A6%82%E8%A6%81.md)
+- 数字图像处理
+  - [1.数字图像处理](%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%2F1.%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86.md)
+- 训练学习
+  - [tesseract-ocr文字识别训练](%E8%AE%AD%E7%BB%83%E5%AD%A6%E4%B9%A0%2Ftesseract-ocr%E6%96%87%E5%AD%97%E8%AF%86%E5%88%AB%E8%AE%AD%E7%BB%83.md)
 - 业务模型
   - [新零售1+5模型](%E4%B8%9A%E5%8A%A1%E6%A8%A1%E5%9E%8B%2F%E6%96%B0%E9%9B%B6%E5%94%AE1%2B5%E6%A8%A1%E5%9E%8B.md)
 - 桌面应用
@@ -230,9 +252,16 @@
     - [Wear robotic knees](English%2Farticle%2FWear%20robotic%20knees.md)
     - [Youth find new hobby](English%2Farticle%2FYouth%20find%20new%20hobby.md)
   - [word](English%2Fword.md)
+- FreeRoad
+  - [1.前言与想法](FreeRoad%2F1.%E5%89%8D%E8%A8%80%E4%B8%8E%E6%83%B3%E6%B3%95.md)
+  - [2.技术选型与环境准备](FreeRoad%2F2.%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87.md)
+  - [3.应用基础构建](FreeRoad%2F3.%E5%BA%94%E7%94%A8%E5%9F%BA%E7%A1%80%E6%9E%84%E5%BB%BA.md)
 - gitlab
   - [gitlab forbidden](gitlab%2Fgitlab%20forbidden.md)
 - java
+  - 工程搭建
+    - [1.工程搭建](java%2F%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA%2F1.%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA.md)
+    - [2.分布式锁](java%2F%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA%2F2.%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81.md)
   - 事务
     - [事务的原理(未完待续)](java%2F%E4%BA%8B%E5%8A%A1%2F%E4%BA%8B%E5%8A%A1%E7%9A%84%E5%8E%9F%E7%90%86(%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD).md)
   - 随手记
@@ -280,3 +309,7 @@
   - [常用基础内置模块](python%2F%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97.md)
   - [语法基础](python%2F%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
   - [jupyter 安装](python%2Fjupyter%20%E5%AE%89%E8%A3%85.md)
+- wlab_doc
+  - [0.代码辅助生成体系](wlab_doc%2F0.%E4%BB%A3%E7%A0%81%E8%BE%85%E5%8A%A9%E7%94%9F%E6%88%90%E4%BD%93%E7%B3%BB.md)
+  - [0.基础服务微服务](wlab_doc%2F0.%E5%9F%BA%E7%A1%80%E6%9C%8D%E5%8A%A1%E5%BE%AE%E6%9C%8D%E5%8A%A1.md)
+  - [1.用户体系微服务](wlab_doc%2F1.%E7%94%A8%E6%88%B7%E4%BD%93%E7%B3%BB%E5%BE%AE%E6%9C%8D%E5%8A%A1.md)
